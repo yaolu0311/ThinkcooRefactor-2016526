@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_edit_title" />
+
+    <EditText
+        android:id="@+id/edit_opinion_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_409"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/px_43"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/personal_about_yjkgnr"
+        android:lineSpacingExtra="@dimen/view_8"
+        android:maxLength="200"
+        android:padding="@dimen/px_43"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_36" />
+
+    <View
+        android:id="@+id/vew_li_fifv"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/edit_opinion_feedback" />
+
+    <TextView
+        android:id="@+id/ac_hint_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vew_li_fifv"
+        android:layout_margin="@dimen/px_43"
+        android:text="@string/personal_about_lxfs"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_44" />
+
+    <View
+        android:id="@+id/vew_li_fif"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/ac_hint_call" />
+
+    <EditText
+        android:id="@+id/edit_opinion_callNumoremail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_130"
+        android:layout_below="@+id/vew_li_fif"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/personal_about_yjkgnryx"
+        android:padding="@dimen/px_43"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_36" />
+
+    <View
+        android:id="@+id/vew_li_six"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/edit_opinion_callNumoremail" />
+
+</RelativeLayout>

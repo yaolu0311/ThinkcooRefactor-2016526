@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background" >
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mytrade_sale"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@id/include_title"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            style="@style/icon"
+            android:src="@mipmap/trade_center_sale" />
+
+        <TextView
+            style="@style/my_trade_item_text"
+            android:layout_toRightOf="@+id/iv_icon2"
+            android:text="@string/trade_my_sale" />
+
+        <ImageView style="@style/dayu_icon" />
+
+        <View style="@style/view_line_interval"
+              android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytrade_tobuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/rl_mytrade_sale"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            style="@style/icon"
+            android:src="@mipmap/trade_center_asktobuy" />
+
+        <TextView
+            style="@style/my_trade_item_text"
+            android:layout_toRightOf="@+id/iv_icon3"
+            android:text="@string/trade_my_to_buy" />
+
+        <ImageView style="@style/dayu_icon" />
+
+        <View style="@style/view_line_interval"
+              android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytrade_release_sale"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/rl_mytrade_tobuy"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon4"
+            style="@style/icon"
+            android:src="@mipmap/trade_center_release_sale" />
+
+        <TextView
+            style="@style/my_trade_item_text"
+            android:layout_toRightOf="@+id/iv_icon4"
+            android:text="@string/trade_release_to_sell" />
+
+        <ImageView style="@style/dayu_icon" />
+
+        <View style="@style/view_line_interval"
+              android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytrade_release_tobuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/rl_mytrade_release_sale"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon5"
+            style="@style/icon"
+            android:src="@mipmap/trade_center_release_asktobuy" />
+
+        <TextView
+            style="@style/my_trade_item_text"
+            android:layout_toRightOf="@+id/iv_icon5"
+            android:text="@string/trade_release_to_buy" />
+
+        <ImageView style="@style/dayu_icon" />
+
+        <View style="@style/view_line_interval"
+              android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytrade_collect"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_mytrade_release_tobuy"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            style="@style/icon"
+            android:src="@mipmap/trade_center_collect" />
+
+        <TextView
+            style="@style/my_trade_item_text"
+            android:layout_toRightOf="@+id/iv_icon1"
+            android:text="@string/trade_my_collections" />
+
+        <ImageView style="@style/dayu_icon" />
+
+        <View style="@style/view_line_interval"
+              android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

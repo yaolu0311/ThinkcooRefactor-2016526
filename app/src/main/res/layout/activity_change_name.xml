@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_edit_title"/>
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_92"
+        android:layout_below="@+id/include"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_44"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/edittext_bg"
+        android:maxLength="18"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/px_10"
+        android:singleLine="true"
+        android:textColor="@color/font3"
+        android:textColorHint="@color/font6"
+        android:textSize="@dimen/px_36" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/image_del_edit"
+        android:layout_width="@dimen/px_92"
+        android:layout_height="@dimen/px_92"
+        android:layout_alignRight="@+id/edit_content"
+        android:layout_alignTop="@+id/edit_content"
+        android:padding="@dimen/px_19"
+        android:src="@mipmap/qingchu"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

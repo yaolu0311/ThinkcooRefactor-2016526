@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_191"
+        android:layout_marginBottom="@dimen/px_27"
+        android:layout_marginTop="@dimen/px_27"
+        android:background="@color/white" >
+
+        <ImageView
+            android:background="@color/line"
+            android:padding="@dimen/px_2"
+            android:id="@+id/ac_image_trade"
+            android:layout_width="@dimen/px_218"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_44"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/ac_text_trade_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_toRightOf="@+id/ac_image_trade"
+            android:maxLines="1"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <TextView
+            android:id="@+id/ac_text_trade_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ac_text_trade_goods_name"
+            android:layout_below="@+id/ac_text_trade_goods_name"
+            android:layout_marginTop="@dimen/px_14"
+            android:layout_toRightOf="@+id/ac_image_trade"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/ac_text_trade_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ac_image_trade"
+            android:layout_alignLeft="@+id/ac_text_trade_goods_name"
+            android:layout_toRightOf="@+id/ac_image_trade"
+            android:textColor="@color/red"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/ac_text_trade_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ac_image_trade"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_44"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/px_32" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

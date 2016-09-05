@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/education_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 开始时间 -->
+        <RelativeLayout
+            android:id="@+id/education_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_time_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="时间"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/education_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_68"
+                android:layout_toLeftOf="@+id/education_time_flag"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/education_time_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_one"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_time"/>
+
+        <!-- 学校名称 -->
+        <RelativeLayout
+            android:id="@+id/education_school"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_one"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_school_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/xuexiao"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/education_school_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_marginRight="@dimen/px_68"
+                android:layout_toLeftOf="@+id/education_school_flag"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/education_school_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_two"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_school"/>
+
+        <!-- 院系名称 -->
+        <RelativeLayout
+            android:id="@+id/education_department"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_two"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_department_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/yuanxi"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/education_department_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_marginRight="@dimen/px_68"
+                android:layout_toRightOf="@+id/education_department_name"
+                android:gravity="top|right"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <EditText
+                android:id="@+id/education_department_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_marginRight="@dimen/px_27"
+                android:background="@null"
+                android:gravity="top|right"
+                android:minWidth="150dp"
+                android:paddingLeft="@dimen/px_27"
+                android:paddingRight="@dimen/px_54"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/text_small_l"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/education_department_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_three"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_department"/>
+
+        <!-- 专业名称 -->
+        <RelativeLayout
+            android:id="@+id/education_major"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_three"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_major_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/zhuanye"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/education_major_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_marginRight="@dimen/px_68"
+                android:layout_toLeftOf="@+id/education_major_flag"
+                android:hint=""
+                android:maxEms="18"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/education_major_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_four"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_major"/>
+
+        <!-- 班级名称 -->
+        <RelativeLayout
+            android:id="@+id/education_class"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_four"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/classname"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/education_class_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_toRightOf="@+id/education_class_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:hint=""
+                android:paddingRight="@dimen/px_68"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_five"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_class"/>
+
+        <!-- 学号 -->
+        <RelativeLayout
+            android:id="@+id/education_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_five"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_student_id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/xuehao"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/education_student_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_toRightOf="@+id/education_student_id_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:hint=""
+                android:paddingRight="@dimen/px_68"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_six"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_student_id"/>
+
+        <!-- 职位名称 -->
+        <RelativeLayout
+            android:id="@+id/education_job"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_six"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_job_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/personal_acasemic_zw"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/education_job_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_27"
+                android:layout_toRightOf="@+id/education_job_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:hint=""
+                android:paddingRight="@dimen/px_68"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_seven"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_job"/>
+
+        <!-- 学历学位 -->
+        <RelativeLayout
+            android:id="@+id/education_level"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_seven"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/education_level_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/xueli"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/education_level_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_68"
+                android:layout_toLeftOf="@+id/education_level_flag"
+                android:hint=""
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/education_level_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_eight"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/education_level"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

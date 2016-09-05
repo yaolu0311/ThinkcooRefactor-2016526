@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.yz.im.ui.activity.FragmentContainerActivity">
+
+    <include
+        layout="@layout/layout_hx_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_105"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tag_find_user"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_105"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ac_find_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:button="@null"
+                android:textColor="@color/blue_title"
+                android:textSize="@dimen/px_44"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:layout_height="@dimen/px_100"
+            android:background="@color/background"/>
+
+        <LinearLayout
+            android:id="@+id/tag_find_group"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_105"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ac_find_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:button="@null"
+                android:textColor="@color/font1"
+                android:textSize="@dimen/px_44"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/find_person"
+            android:layout_height="@dimen/px_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_title"/>
+        <View
+            android:id="@+id/find_group"
+            android:layout_height="@dimen/px_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue_title"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_20" />
+
+</LinearLayout>

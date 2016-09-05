@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hyphenate.easeui"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20"/>
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application>
+        <activity android:name="com.yz.im.ui.activity.ChatActivity"/>
+        <activity
+            android:name=".ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"/>
+        <activity
+            android:name=".ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"/>
+        <activity
+            android:name=".ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <!-- download file -->
+        <activity
+            android:name=".ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"/>
+        <activity
+            android:name="com.yz.im.ui.activity.VoiceCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style"/>
+        <activity
+            android:name="com.yz.im.ui.activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"/>
+        <activity
+            android:name="com.yz.im.ui.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.yz.im.ui.activity.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.yz.im.ui.activity.ContactListActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 百度地图需要的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3ZMTbigoZYlHRwmfbviMERQU"/>
+
+        <service
+            android:name="com.yz.im.services.BackgroundInitService"
+            android:exported="false"/>
+
+        <activity android:name="com.yz.im.ui.activity.ExceptionActivity"/>
+        <activity android:name="com.yz.im.ui.activity.GroupListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.GroupInfoActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.SingleEditTextActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.ReportActivity">
+        </activity>
+        <activity
+            android:name="com.yz.im.ui.activity.GroupMemberListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FriendInfoActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.StrangerInfoActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.BlackUserInfoActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.InviteContactListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.SendInviteReasonActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FindUserOrGroupActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.CreateGroupActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.SystemSettingActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FindGroupListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.UnJoinGroupInfoActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FindUserExactActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FindUserListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.RecommendUserListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.TelephoneContactListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.BlackUserListActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.NoticeMessageActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.FragmentContainerActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.GroupCardActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.GroupTransferMsgActivity">
+        </activity>
+        <activity android:name="com.yz.im.ui.activity.GroupListCardActivity">
+        </activity>
+    </application>
+
+</manifest>

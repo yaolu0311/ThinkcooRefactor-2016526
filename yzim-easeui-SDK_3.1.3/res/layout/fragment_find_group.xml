@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <TextView
+        android:id="@+id/tv_group_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_92"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_44"
+        android:text="@string/may_interest_group"
+        android:textColor="@color/text_2"
+        android:textSize="@dimen/px_44"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_interest_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_group_notice"/>
+
+</RelativeLayout>

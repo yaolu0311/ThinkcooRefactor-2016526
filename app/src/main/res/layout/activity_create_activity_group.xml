@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/color_title"
+        tools:context="com.thinkcoo.mobile.presentation.views.activitys.CreateClassActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/layout_title" />
+
+        <RelativeLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100"
+            android:layout_below="@id/include"
+            android:layout_marginTop="@dimen/px_15"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_shcool"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="@dimen/px_200"
+                android:text="创建组" />
+
+            <View
+                android:layout_centerVertical="true"
+                android:id="@+id/school_line"
+                android:layout_width="@dimen/px_2"
+                android:layout_height="@dimen/px_80"
+                android:layout_toRightOf="@id/txt_shcool"
+                android:background="@color/color_title"
+               />
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_toRightOf="@id/school_line"
+                android:background="@null"
+                android:id="@+id/editText_content"
+                android:hint="如 华山旅游组"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_confirm"
+            android:layout_below="@id/firstLayout"
+            android:layout_width="@dimen/px_800"
+            android:layout_height="@dimen/px_110"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_shape_round_blue"
+            android:gravity="center"
+            android:text="@string/queren"
+            android:textColor="@color/white" />
+
+</RelativeLayout>

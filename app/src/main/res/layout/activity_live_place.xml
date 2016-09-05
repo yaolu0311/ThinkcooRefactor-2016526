@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:focusable="true" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_edit_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_city"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include"
+        android:background="@android:color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp" >
+
+        <TextView
+            android:id="@+id/tv_select_city_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/personal_select_city"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <TextView
+            android:id="@+id/tv_select_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_select_city_tt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_21"
+            android:layout_marginRight="@dimen/px_13"
+            android:layout_toLeftOf="@+id/iv_icon2"
+            android:layout_toRightOf="@+id/tv_select_city_tt"
+            android:gravity="top|right"
+            android:lines="2"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_select_city_details_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_select_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_1"
+        android:background="@color/white"
+        android:ems="100"
+        android:gravity="top"
+        android:hint="@string/personal_address"
+        android:minHeight="@dimen/px_272"
+        android:padding="@dimen/px_43"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_36" >
+    </EditText>
+
+</RelativeLayout>

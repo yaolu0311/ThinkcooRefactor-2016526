@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_350"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_menu_more"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/edite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_131"
+            android:layout_height="@dimen/px_131"
+            android:layout_marginLeft="@dimen/px_11"
+            android:padding="@dimen/px_33"
+            android:scaleType="centerInside"
+            android:src="@mipmap/edite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_5"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="#9e9e9e"/>
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_131"
+            android:layout_height="@dimen/px_131"
+            android:layout_marginLeft="@dimen/px_11"
+            android:padding="@dimen/px_33"
+            android:scaleType="centerInside"
+            android:src="@mipmap/delete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_5"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

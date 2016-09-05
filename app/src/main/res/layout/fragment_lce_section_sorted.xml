@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentView"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/content_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/v_firstword_dialog"
+            android:layout_width="@dimen/px_246"
+            android:layout_height="@dimen/px_246"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/voip_toast_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px_93"
+            android:visibility="invisible" />
+
+        <com.thinkcoo.mobile.presentation.views.component.SideBar
+            android:id="@+id/v_firstword_sidrbar"
+            android:layout_width="@dimen/px_93"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/errorView"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/loadingView"
+        android:visibility="gone"
+        >
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:layout_width="@dimen/image_30"
+            android:layout_height="@dimen/image_30"
+            style="?android:attr/progressBarStyleLarge"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

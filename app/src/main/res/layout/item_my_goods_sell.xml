@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/px_27" >
+
+    <ImageView
+        android:id="@+id/item_my_sale_list_img_body_pic"
+        android:layout_width="@dimen/px_218"
+        android:layout_height="@dimen/px_190"
+        android:layout_marginBottom="@dimen/px_27"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_20"
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_my_sale_list_img_body_pic"
+        android:maxLines="2"
+        android:paddingRight="@dimen/px_41"
+        android:text="我要求购一个手机，只卖一块钱的全新手机！！！！"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_44" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_my_sale_list_txt_goods_name"
+        android:layout_below="@id/item_my_sale_list_txt_goods_name"
+        android:layout_marginTop="@dimen/px_10"
+        android:singleLine="true"
+        android:text="￥21.00"
+        android:textColor="@color/red"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_my_sale_list_img_body_pic"
+        android:layout_alignLeft="@id/item_my_sale_list_txt_goods_name"
+        android:singleLine="true"
+        android:text="@string/trade_browse_times"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_32" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_goods_browsecounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:singleLine="true"
+        android:text="18次"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_32" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_goods_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_my_sale_list_txt_goods_browsecounts"
+        android:layout_alignBottom="@+id/item_my_sale_list_txt_goods_browsecounts"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px_41"
+        android:gravity="center"
+        android:text="2018-01-01"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_32"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/view_line_edge"
+        android:layout_below="@id/item_my_sale_list_img_body_pic"
+        android:layout_marginBottom="@dimen/px_14"
+        />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_goods_sold_out"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view1"
+        android:layout_marginRight="@dimen/px_41"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/trade_off_sale"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/px_36"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_delete"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_my_sale_list_txt_goods_sold_out"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/item_my_sale_list_txt_goods_sold_out"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/px_36"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_refresh"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_my_sale_list_txt_goods_sold_out"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/item_my_sale_list_txt_delete"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/refresh"
+        android:textColor="@color/draw_but"
+        android:textSize="@dimen/px_36"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/item_my_sale_list_txt_update"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_my_sale_list_txt_goods_sold_out"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/item_my_sale_list_txt_refresh"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/modify"
+        android:textColor="@color/draw_but"
+        android:textSize="@dimen/px_36"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/view_line_edge"
+        android:layout_below="@id/item_my_sale_list_txt_update"
+        android:layout_marginTop="@dimen/px_14" />
+
+</RelativeLayout>

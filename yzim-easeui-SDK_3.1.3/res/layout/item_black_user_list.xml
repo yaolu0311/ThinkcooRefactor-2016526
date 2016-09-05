@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_160"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_layout_friend_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_159">
+
+        <ImageView
+            android:id="@+id/img_head"
+            style="@style/contact_item_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_toRightOf="@+id/layout_check_left"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_avatar"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@+id/img_head"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:text="fdsfdsfdsdddddddddddddddddddddd"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"/>
+
+</LinearLayout>

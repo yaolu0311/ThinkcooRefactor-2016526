@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_title"
+              android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ac_title_search" />
+
+    <LinearLayout
+        android:id="@+id/filter_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:orientation="horizontal"
+        />
+
+    <FrameLayout
+        android:id="@+id/goods_search_result_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

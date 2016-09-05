@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_schedule_title"/>
+
+    <LinearLayout
+        android:id="@+id/week_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_title"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_empty_view"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:textColor="@color/white"
+          />
+
+        <TextView
+            android:text="@string/day"
+            style="@style/week_day_text"
+           />
+        <TextView
+            android:text="@string/one"
+            style="@style/week_day_text"/>
+        <TextView
+            android:text="@string/two"
+            style="@style/week_day_text"/>
+        <TextView
+            android:text="@string/three"
+            style="@style/week_day_text"/>
+        <TextView
+            android:text="@string/four"
+            style="@style/week_day_text"/>
+        <TextView
+            android:text="@string/five"
+            style="@style/week_day_text"/>
+        <TextView
+            android:text="@string/six"
+            style="@style/week_day_text"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="demo.mydayviewdemo.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="fill_horizontal|top"
+            android:paddingTop="1dip">
+
+            <ViewSwitcher
+                android:id="@+id/switcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/blue_title"
+            app:elevation="10dp"
+            app:pressedTranslationZ="10dp"
+            app:fabSize="normal"
+            android:visibility="visible"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="bottom|right|end"
+            app:rippleColor="#303744"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

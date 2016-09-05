@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title"/>
+
+    <include
+        android:id="@+id/sc_datail"
+        layout="@layout/item_sc_activitydetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"/>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_250"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_below="@id/sc_datail"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_250"
+            android:layout_below="@id/sc_datail"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/px_15"
+                android:drawableTop="@mipmap/merber"
+                android:gravity="center"
+                android:text="@string/sc_member"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_250"
+            android:layout_below="@id/sc_datail"
+            android:layout_marginLeft="@dimen/px_3"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/px_15"
+                android:drawableTop="@mipmap/call"
+                android:gravity="center"
+                android:text="@string/sc_call"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_250"
+            android:layout_below="@id/sc_datail"
+            android:layout_marginLeft="@dimen/px_3"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/px_15"
+                android:drawableTop="@mipmap/performance"
+                android:gravity="center"
+                android:text="@string/sc_wechat"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_four"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_250"
+            android:layout_below="@id/sc_datail"
+            android:layout_marginLeft="@dimen/px_3"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_2"
+                android:drawablePadding="@dimen/px_15"
+                android:drawableTop="@mipmap/brodcast"
+                android:gravity="center"
+                android:text="@string/sc_notice"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/line"/>-->
+
+    <FrameLayout
+        android:id="@+id/fl_resource_container"
+        android:layout_below="@id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</RelativeLayout>

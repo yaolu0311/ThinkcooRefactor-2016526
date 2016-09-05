@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_report"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_131"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:layout_marginLeft="@dimen/px_44"
+            android:focusable="false"
+            android:clickable="false"
+            android:paddingLeft="@dimen/px_10"
+            android:scaleType="centerInside"
+            android:scaleX="0.6"
+            android:scaleY="0.6"/>
+
+        <TextView
+            android:id="@+id/tv_report_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_131"
+            android:layout_marginLeft="@dimen/px_10"
+            android:gravity="center_vertical"
+            android:text="@string/pornographic"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_44"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/line_1">
+
+    </View>
+</LinearLayout>

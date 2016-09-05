@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/ac_city_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/include"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/ac_select_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_44"
+            android:textSize="@dimen/px_44"
+            android:textColor="@color/text_1"
+            android:text="当前位置:" />
+
+        <TextView
+            android:id="@+id/ac_city_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/px_44"
+            android:paddingLeft="@dimen/px_14"
+            android:textColor="@color/text_1"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/ac_select_city_text"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/city_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ac_city_lay">
+    </FrameLayout>
+
+</RelativeLayout>

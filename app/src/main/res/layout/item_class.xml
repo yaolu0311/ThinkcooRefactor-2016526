@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_180"
+    android:background="@drawable/ac_green_bule_class"
+    android:id="@+id/parentLayout"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/px_200"
+        android:gravity="center">
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/text_school"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="石油工程1601" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:id="@+id/text_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_school"
+            android:gravity="center"
+            android:text="石油大学" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

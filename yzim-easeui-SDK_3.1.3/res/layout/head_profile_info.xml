@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_300"
+    android:background="@drawable/bg_profile_info_head" >
+
+    <ImageView
+        android:id="@+id/iv_headPortrait"
+        android:layout_width="@dimen/px_197"
+        android:layout_height="@dimen/px_197"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/px_44"/>
+
+    <LinearLayout
+        android:id="@+id/ac_layout_01"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignBottom="@+id/iv_headPortrait"
+        android:layout_alignTop="@+id/iv_headPortrait"
+        android:layout_marginLeft="@dimen/px_28"
+        android:layout_toRightOf="@+id/iv_headPortrait"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_user_remark"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                android:id="@+id/iv_user_sex"
+                android:layout_width="@dimen/px_44"
+                android:layout_height="@dimen/px_44"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_44"
+                android:src="@drawable/defaule_sex_image"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/px_44"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/tv_thinkcoo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/px_36" />
+    </LinearLayout>
+
+</RelativeLayout>

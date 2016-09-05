@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_recommend_user"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_134"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134">
+
+        <ImageView
+            android:id="@+id/img_recommend"
+            android:layout_width="@dimen/px_131"
+            android:layout_height="@dimen/px_131"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_8"
+            android:padding="@dimen/px_33"
+            android:scaleType="centerInside"
+            android:src="@drawable/smile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_recommend"
+            android:text="@string/recommend_user"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36"/>
+
+        <ImageView
+            android:layout_width="@dimen/px_131"
+            android:layout_height="@dimen/px_131"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px_30"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dayu"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/line_1"/>
+
+</LinearLayout>

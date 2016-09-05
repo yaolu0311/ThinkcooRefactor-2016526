@@ -1,0 +1,117 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "http://dl.bintray.com/jjhesk/maven" }
+        maven { url "https://jitpack.io" }
+        maven { url "http://dl.bintray.com/journeyapps/maven" }
+
+    }
+}
+
+ext {
+
+    //Android
+    androidBuildToolsVersion = "23.0.1"
+    androidMinSdkVersion = 14
+    androidTargetSdkVersion = 23
+    androidCompileSdkVersion = 23
+
+    //Libraries
+    daggerVersion = '2.4'
+    butterKnifeVersion = '7.0.1'
+    recyclerViewVersion = '23.4.0'
+    rxJavaVersion = '1.0.14'
+    rxAndroidVersion = '1.0.1'
+    rxCahce = "1.6.2"
+    rxCacheGson = "0.0.3"
+    javaxAnnotationVersion = '1.0'
+    gsonVersion = '2.3'
+    okHttpVersion = '3.3.1'
+    logginInterceptor = '3.3.1'
+    androidAnnotationsVersion = '23.4.0'
+    mvp                 = "2.0.1"
+    fresco              = "0.9.0+"
+    androidannotations  = "3.3.1"
+    retrofit = "2.0.2"
+    ultimateRecyclerView = '0.5.8'
+    pickerview  = '2.0.8'
+    stickyHeadersRecyclerview = '0.4.3'
+    glide = '3.7.0'
+    banner = '2.0.5'
+    multidex = '1.0.1'
+    androidV4 = '23.4.0'
+    paginate = '0.5.1'
+    supportDesign = '23.1.1'
+    takePhoto = '2.0.1'
+    galleryFinal = '1.4.8.7'
+    recyclerViewHeader = '2.0.1'
+    zxing = '3.0.1'
+    //Testing
+    robolectricVersion = '3.0'
+    jUnitVersion = '4.12'
+    assertJVersion = '1.7.1'
+    mockitoVersion = '1.9.5'
+    dexmakerVersion = '1.0'
+    espressoVersion = '2.0'
+    testingSupportLibVersion = '0.1'
+
+    //Development
+    leakCanaryVersion = '1.3.1'
+
+
+    appDependencies = [
+            daggerCompiler : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger         : "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife    : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            recyclerView   : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+            rxJava         : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid      : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            rxCahce        : "com.github.VictorAlbertos.RxCache:runtime:${rxCahce}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            mvp : "com.hannesdorfmann.mosby:mvp:${mvp}",
+            mvpViewstate : "com.hannesdorfmann.mosby:viewstate:${mvp}",
+            fresco : "com.facebook.fresco:fresco:${fresco}",
+            okHttp            : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLog: "com.squareup.okhttp3:logging-interceptor:${logginInterceptor}",
+            gson              : "com.google.code.gson:gson:${gsonVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            retrofitBase : "com.squareup.retrofit2:retrofit:${retrofit}",
+            retrofitGsonPart : "com.squareup.retrofit2:converter-gson:${retrofit}",
+            retrofitRxJava : "com.squareup.retrofit2:adapter-rxjava:${retrofit}",
+            excilysAndroidannotations:"org.androidannotations:androidannotations-api:${androidannotations}",
+            excilysAndroidannotationsCompiler : "org.androidannotations:androidannotations:${androidannotations}",
+            ultimateRecyclerView: "com.hkm.ui:ultimaterecyclerview:${ultimateRecyclerView}",
+            pickerview : "com.bigkoo:pickerview:${pickerview}",
+            stickyHeadersRecyclerview: "com.timehop.stickyheadersrecyclerview:library:[${stickyHeadersRecyclerview}]@aar",
+            glide: "com.github.bumptech.glide:glide:${glide}",
+            banner: "com.bigkoo:convenientbanner:${banner}",
+            multidex: "com.android.support:multidex:${multidex}",
+            rxCacheGson: "com.github.VictorAlbertos.Jolyglot:gson:${rxCacheGson}",
+            androidV4:"com.android.support:support-v4:${androidV4}",
+            paginate: "com.github.markomilos:paginate:${paginate}",
+            supportDesign:  "com.android.support:design:${supportDesign}",
+            takePhoto:"com.jph.takephoto:takephoto_library:${takePhoto}",
+            galleryFinal:"cn.finalteam:galleryfinal:${galleryFinal}",
+            recyclerViewHeader:"com.bartoszlipinski:recyclerviewheader2:${recyclerViewHeader}",
+            zxing:"com.google.zxing:core:${zxing}"
+
+    ]
+
+    apptestDependencies = [
+            mockito          : "org.mockito:mockito-core:${mockitoVersion}",
+            dexmaker         : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito  : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            espresso         : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            testingSupportLib: "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+            junit      : "junit:junit:${jUnitVersion}",
+            assertj    : "org.assertj:assertj-core:${assertJVersion}",
+            mockito    : "org.mockito:mockito-core:${mockitoVersion}",
+            robolectric: "org.robolectric:robolectric:${robolectricVersion}",
+    ]
+
+    developmentDependencies = [
+            leakCanary: "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+    ]
+
+}

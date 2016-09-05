@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@mipmap/add_status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="选择重复周期"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@mipmap/add_status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="提醒时间"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@mipmap/add_status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="添加备注"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!--更多时段容器-->
+    <com.thinkcoo.mobile.presentation.views.component.MeasureListView
+        android:id="@+id/more_time_interval_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+    </com.thinkcoo.mobile.presentation.views.component.MeasureListView>
+    <RelativeLayout
+        android:id="@+id/add_more_time_interval"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_weight="0"
+        android:visibility="visible"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:background="@mipmap/add_status"
+            android:id="@+id/ib_add_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/ib_add_more"
+            android:textSize="@dimen/px_44"
+            android:gravity="center_vertical"
+            android:text="@string/add_more_time_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

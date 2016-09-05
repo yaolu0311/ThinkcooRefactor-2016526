@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.thinkcoo.mobile.presentation.views.activitys.DownloadManagerActivity">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/px_150">
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:text="@string/download"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:background="@color/gray"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_upload"
+            android:text="@string/upload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/px_8">
+
+        <View
+            android:id="@+id/tab_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/blue_title"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:id="@+id/tab_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:background="@color/blue_title"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/down_and_up_load_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

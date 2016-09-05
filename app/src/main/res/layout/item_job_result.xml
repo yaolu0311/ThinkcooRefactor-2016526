@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/findjob_sq_itemt_relayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_27"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/findjob_sq_zw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/findjob_sq_xz"
+            android:paddingRight="@dimen/px_15"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <TextView
+            android:id="@+id/findjob_sq_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/findjob_sq_zw"
+            android:layout_marginRight="@dimen/px_62"
+            android:textColor="@color/red"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/findjob_sq_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/findjob_sq_zw"
+            android:layout_below="@+id/findjob_sq_zw"
+            android:layout_marginTop="@dimen/px_43"
+            android:layout_marginRight="@dimen/px_27"
+            android:layout_toLeftOf="@+id/findjob_sq_dz"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/findjob_sq_dz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/findjob_sq_gs"
+            android:layout_alignRight="@+id/findjob_sq_xz"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/findjob_sq_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/findjob_sq_zw"
+            android:layout_below="@+id/findjob_sq_gs"
+            android:layout_marginTop="@dimen/px_13"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_32" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/findjob_sq_itemt_relayout"
+        android:layout_marginTop="@dimen/px_21"
+        />
+
+    <ImageView
+        android:id="@+id/findjob_sq_jt"
+        android:layout_width="@dimen/px_65"
+        android:layout_height="@dimen/px_65"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_16"
+        android:padding="@dimen/px_19"
+        android:src="@mipmap/getjob_jiantou" />
+
+</RelativeLayout>

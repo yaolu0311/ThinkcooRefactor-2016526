@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_197"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/px_43"
+    android:paddingRight="@dimen/px_43" >
+
+    <ImageView
+        android:id="@+id/iv_harvest_image"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="@dimen/px_131"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/px_27"
+        android:layout_marginTop="@dimen/px_27"
+        android:scaleType="fitXY"
+        android:src="@mipmap/my_harvest_head" />
+
+    <TextView
+        android:id="@+id/tv_harvest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_harvest_image"
+        android:layout_marginLeft="@dimen/px_43"
+        android:layout_marginRight="@dimen/px_131"
+        android:layout_toRightOf="@+id/iv_harvest_image"
+        android:singleLine="true"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_44" />
+
+    <TextView
+        android:id="@+id/tv_harvest_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_harvest_image"
+        android:layout_marginLeft="@dimen/px_43"
+        android:layout_marginRight="@dimen/px_131"
+        android:layout_toRightOf="@+id/iv_harvest_image"
+        android:singleLine="true"
+        android:textColor="@color/text_2"
+        android:textSize="@dimen/px_36" />
+
+    <ImageView
+
+        android:id="@+id/iv_harvest_arrow"
+        android:layout_width="@dimen/px_68"
+        android:layout_height="@dimen/px_68"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:padding="@dimen/px_19"
+        android:src="@mipmap/arrow" />
+
+</RelativeLayout>

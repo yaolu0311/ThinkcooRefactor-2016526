@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"/>
+
+    <TextView
+        android:id="@+id/tv_industry_notice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/max_select_count_three"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_34"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_industry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

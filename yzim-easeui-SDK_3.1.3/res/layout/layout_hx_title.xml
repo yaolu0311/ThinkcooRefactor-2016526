@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/blue_title">
+
+
+    <RelativeLayout
+        android:id="@+id/title_left_part"
+        android:layout_width="52dp"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/text_left"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="完成"
+            android:textColor="@color/background"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/image_left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="12dp"
+            android:src="@drawable/icon_contacts"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/title_right_part"
+        android:layout_toRightOf="@+id/title_left_part"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/title_right_part"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/background"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:padding="12dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_update_moblienum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/px_43"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="@string/personal_about_sjhm"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_personal_inforone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/layout_update_moblienum"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/view_personal_inforone"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_personal_mima"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/layout_update_pwd"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_update_emile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_130"
+        android:layout_below="@+id/layout_update_pwd"
+        android:layout_marginTop="@dimen/px_3"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="修改邮箱"
+            android:textColor="@color/color_smoke"
+            android:textSize="@dimen/text_middle_m" />
+
+        <ImageView
+            android:layout_width="@dimen/px_130"
+            android:layout_height="@dimen/px_130"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/px_10"
+            android:padding="@dimen/px_32"
+            android:scaleType="centerInside"
+            android:src="@mipmap/dayu" />
+    </RelativeLayout>
+
+</RelativeLayout>

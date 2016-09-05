@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_old_phone_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:padding="4dp"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_43"
+        android:layout_marginTop="@dimen/px_27"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/px_43"
+        android:textColor="@color/color_smoke"
+        android:textSize="@dimen/text_small_l" />
+
+    <EditText
+        android:id="@+id/et_new_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/tv_old_phone_num"
+        android:layout_marginLeft="@dimen/px_43"
+        android:layout_marginRight="@dimen/px_43"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tech_bg_edittext"
+        android:digits="1234567890."
+        android:hint="@string/new_phone_number"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/px_21"
+        android:singleLine="true"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_44" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/et_new_phone_number"
+        android:layout_marginTop="@dimen/px_21"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_vcode_content"
+            android:layout_width="@dimen/view_0"
+            android:layout_height="@dimen/px_131"
+            android:layout_marginLeft="@dimen/px_43"
+            android:layout_marginRight="@dimen/px_43"
+            android:layout_weight="1"
+            android:background="@drawable/tech_bg_edittext"
+            android:digits="1234567890."
+            android:hint="@string/yanzhengma"
+            android:inputType="number"
+            android:paddingLeft="@dimen/px_21"
+            android:singleLine="true"
+            android:textColor="@color/text_2"
+            android:textColorHint="@color/text_3"
+            android:textSize="@dimen/px_44" />
+
+        <com.thinkcoo.mobile.presentation.views.component.CountDownButton
+            android:id="@+id/btn_request_vcode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_131"
+            android:layout_marginRight="@dimen/px_44"
+            android:background="@drawable/selector_shape_round_blue"
+            android:text="@string/obtain_vcode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small_l" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_user_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/layout"
+        android:layout_margin="@dimen/px_43"
+        android:background="@drawable/tech_bg_edittext"
+        android:hint="@string/thinkcoo_login_password"
+        android:paddingLeft="@dimen/px_21"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_44" />
+
+</RelativeLayout>

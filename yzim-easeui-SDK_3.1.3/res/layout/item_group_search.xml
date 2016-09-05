@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_160"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/item_find_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_159">
+
+        <ImageView
+            android:id="@+id/img_head"
+            style="@style/contact_item_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_toRightOf="@+id/layout_check_left"
+            android:src="@drawable/default_avatar"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_group_member"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_131"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_head">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/tv_group_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px_10"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_44"
+            android:background="@drawable/edittext_bg"
+            android:textSize="@dimen/px_35"
+            android:textColor="@color/text_2"
+            android:text="@string/join"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/line_1"/>
+
+</LinearLayout>

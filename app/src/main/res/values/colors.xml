@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--新规范 -->
+    <color name="blue_title">#338dff</color>
+    <color name="text_1">#333333</color>
+    <color name="text_2">#666666</color>
+    <color name="text_3">#999999</color>
+    <color name="line">#cccccc</color>
+    <color name="line_1">#d7d7d7</color>
+    <color name="background">#f1f1f1</color>
+    <color name="white">#ffffff</color>
+    <!-- 黑色 -->
+    <color name="transparent">#0000</color>
+    <color name="gray2">#adadad</color>
+    <!-- 按钮颜色 蓝色 -->
+    <color name="color_blue">#1e90ff</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+
+    <color name="action_sheet_gray">#8F8F8F</color>
+    <color name="draw_but">#338dff</color>
+    <!-- 浅灰色 -->
+    <color name="color_gray">#999999</color>
+    <!-- 深灰色 -->
+    <color name="color_smoke">#666666</color>
+    <color name="status_item_pressed">#d6e8ff</color>
+    <color name="status_item_focused">#00000000</color>
+    <color name="line_bg">#E6E6E6</color>
+
+    <!-- 字体颜色 -->
+    <color name="font1">#787878</color>
+    <color name="font2">#969696</color>
+    <color name="font3">#666666</color>
+    <color name="font4">#CBCBCE</color>
+    <color name="font5">#333333</color>
+    <color name="font6">#999999</color>
+    <color name="font7">#fd0202</color>
+    <color name="font8">#cccccc</color>
+    <color name="font9">#d7d7d7</color>
+    <!-- 下拉刷新  上拉加载 -->
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="transparent_bg">#00ffffff</color>
+
+    <!-- 删除按钮 -->
+    <color name="delete_color">#a2cbff</color>
+    <color name="orange">#ffb648</color>
+    <color name="index_color">#338dff</color>
+    <color name="adapter_header_color">#99a2cbff</color>
+
+    <color name="dialog_line">#c6c6c6</color>
+    <color name="sheet_blue">#037BFF</color>
+    <!-- 纯白色 -->
+    <color name="color_white">#ffffff</color>
+    <!--MyDayView-->
+    <!-- Text color of the "new event" hint in day and week views -->
+    <color name="pressed">#330066ff</color>
+    <color name="new_event_hint_text_color">#FFFFFFFF</color>
+    <color name="week_saturday">#80333333</color>
+    <color name="week_sunday">#80333333</color>
+    <color name="calendar_future_bg_color">#ffffffff</color>
+    <color name="background_color">#ffdddddd</color>
+    <color name="event_background">#ffc3d9ff</color>
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#000</color>
+    <color name="calendar_owner_text_color">#ffbebebe</color>
+    <color name="calendar_date_range_color">#80000000</color>
+    <color name="calendar_hour_label">#ff666666</color>
+    <color name="calendar_ampm_label">#ff999999</color>
+    <color name="calendar_hour_background">#ffEEEEEE</color>
+    <color name="calendar_date_banner_background">#FFEEEEEE</color>
+    <color name="calendar_date_banner_text_color">#ff666666</color>
+    <color name="calendar_grid_area_selected">#338dff</color>
+    <color name="calendar_grid_line_inner_horizontal_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_inner_vertical_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_highlight_color">#ff707070</color>
+    <color name="month_event_other_color">#FF666666</color>
+    <color name="transparent6">#40000000</color>
+    <color name="today_date_color">#fff</color>
+    <color name="header_date_color">#333333</color>
+    <color name="header_lunar_date_color">#333333</color>
+    <color name="today_circle_background_color">#338dff</color>
+
+    <!--schedule color-->
+    <color name="schedule_manager_color">#FF2D2D</color>
+    <color name="schedule_course_color">#46A3FF</color>
+    <color name="schedule_learn_color">#9AFF02</color>
+    <color name="schedule_activity_color">#FF5809</color>
+    <!-- title的颜色 -->
+    <color name="color_title">#f1f1f1</color>
+    <color name="red">#ff0000</color>
+    <color name="color_orange">#ffb35a</color>
+    <!-- 扫一扫 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!-- 水鸭色 -->
+    <color name="green">#008000</color>
+    <!-- 求职黑 -->
+    <color name="job_black">#666666</color>
+    <color name="co_analysis">#b7d7fe</color>
+
+    <color name="color_arrival">#4cca9a</color>
+    <color name="color_un_arrival">#fea6a5</color>
+    <color name="color_late">#ffcb41</color>
+    <color name="color_leave_early">#92c8f6</color>
+
+</resources>

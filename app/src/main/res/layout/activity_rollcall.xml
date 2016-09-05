@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#001331"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shakeBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/shakebackgroud_log" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_shake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_uplogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/shake_logo_up" />
+
+        <ImageView
+            android:id="@+id/iv_downlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/shake_logo_down" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rollcallactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="XXX活动详情"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_yaoyiyao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rollcallactivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="摇一摇开始点名"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:id="@+id/shake_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_154"
+        android:background="#33000000"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/icon"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tittle_back" />
+
+        <TextView
+            android:id="@+id/tv_titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_60" />
+
+        <ImageView
+            android:id="@+id/iv_call_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/more"
+            android:padding="@dimen/px_33"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

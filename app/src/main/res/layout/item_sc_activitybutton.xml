@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_detailbutton"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_250">
+    <LinearLayout
+        android:id="@+id/item_ll_activitydetailbutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_250"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_member"
+            android:drawableTop="@mipmap/username"
+            android:text="@string/sc_member"
+            android:textColor="#00ffff"
+            android:layout_marginRight="@dimen/px_80"
+           />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_call"
+            android:drawableTop="@mipmap/username"
+            android:text="@string/sc_call"
+            android:textColor="#00ff00"
+            android:layout_marginRight="@dimen/px_80"
+             />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_wechat"
+            android:drawableTop="@mipmap/username"
+            android:text="@string/sc_wechat"
+            android:textColor="#fff000"
+            android:layout_marginRight="@dimen/px_80"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_notice"
+            android:drawableTop="@mipmap/username"
+            android:text="@string/sc_notice"
+            android:textColor="#ff00dd"
+            android:layout_marginRight="@dimen/px_80"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

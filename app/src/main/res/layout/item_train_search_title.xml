@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_123"
+    android:layout_below="@id/ll_search"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_train_selectType_place"
+        android:layout_width="@dimen/view_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_index_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_14"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:text="@string/train_place"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/iv_index_isArrow0"
+            android:layout_width="@dimen/px_27"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_index_area"
+            android:src="@mipmap/trade_filter_gray_down" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/px_1"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_train_selectType_price"
+        android:layout_width="@dimen/view_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_index_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_14"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:text="@string/train_price"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/iv_index_isArrow1"
+            android:layout_width="@dimen/px_27"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_index_price"
+            android:src="@mipmap/trade_filter_gray_down" />
+    </RelativeLayout>
+
+    
+    <View
+        android:layout_width="@dimen/px_1"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_train_selectType_class"
+        android:layout_width="@dimen/view_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_index_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/view_5"
+            android:text="@string/train_course_type"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/iv_index_isArrow2"
+            android:layout_width="@dimen/px_27"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_index_team"
+            android:src="@mipmap/trade_filter_gray_down" />
+    </RelativeLayout>
+
+    
+    <View
+        android:layout_width="@dimen/px_1"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_train_selectType_time"
+        android:layout_width="@dimen/view_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_index_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_14"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:text="@string/train_time"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/iv_index_isArrow3"
+            android:layout_width="@dimen/px_27"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_index_start_time"
+            android:src="@mipmap/trade_filter_gray_down" />
+    </RelativeLayout>
+
+</LinearLayout>

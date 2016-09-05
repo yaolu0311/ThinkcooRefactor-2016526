@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_group_disturb"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_144"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_143">
+
+        <TextView
+            android:id="@+id/news_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_44"
+            android:text="@string/group_disturb"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_msg_disturb"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/toggle_group_disturb"
+                android:layout_width="@dimen/px_185"
+                android:layout_height="@dimen/px_111"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"/>
+
+</LinearLayout>

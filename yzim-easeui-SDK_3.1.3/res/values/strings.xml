@@ -1,0 +1,172 @@
+<resources>
+    <string name="user_name_is_empty">用户名不能为空</string>
+    <string name="password_is_empty">密码不能为空</string>
+    <string name="user_id_is_empty">用户id不能为空</string>
+    <string name="hx_title">快信</string>
+    <string name="attach_user_card">名片</string>
+    <string name="warn_notice">温馨提示</string>
+    <string name="login_again">重新登录</string>
+    <string name="remote_login">您的账号已在其它设备登录，是否要重新登录?</string>
+    <string name="loading">正在登录...</string>
+    <string name="quanzi">圈子</string>
+    <string name="friend_setting">好友设置</string>
+    <string name="signature">个性签名</string>
+    <string name="modify_back">修改备注</string>
+    <string name="push_top">聊天置顶</string>
+    <string name="off_msg_disturb">消息免打扰</string>
+    <string name="move_to_black_list">加入黑名单</string>
+    <string name="report_user">举报此人</string>
+    <string name="question_user">质疑此人</string>
+    <string name="send_msg">发送消息</string>
+    <string name="delete_user">删除好友</string>
+    <string name="Group">圈子</string>
+    <string name="thinkcoo">思扣号: %s</string>
+    <string name="name">姓名: %s</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="name_group">圈子名称</string>
+    <string name="group_info">圈子简介</string>
+    <string name="group_member">圈子成员</string>
+    <string name="group_nickname">我的圈名片</string>
+    <string name="group_transfer">圈主转让</string>
+    <string name="group_image">圈子头像</string>
+    <string name="group_stick">聊天置顶</string>
+    <string name="group_disturb">消息免打扰</string>
+    <string name="group_report">举报此圈子</string>
+    <string name="group_all_chat">一起聊</string>
+    <string name="quit_group">退出圈子</string>
+    <string name="group_setting">圈子设置</string>
+    <string name="delete_success">删除成功</string>
+    <string name="modify_success">修改成功</string>
+    <string name="remark">备注</string>
+    <string name="hint_remark">请输入备注名</string>
+    <string name="hint_group_name">请输入圈子名</string>
+    <string name="hint_group_introduction">请输入简介内容</string>
+    <string name="group_remark">我的圈子名片</string>
+    <string name="remark_no_change">备注名未改变，不需要提交</string>
+    <string name="report_reason">请选择举报理由</string>
+    <string name="fake_identity">虚假身份</string>
+    <string name="illegal">违法</string>
+    <string name="cheat_money">欺诈骗钱</string>
+    <string name="spread_rumors">传播谣言</string>
+    <string name="politically_sensitive">政治敏感</string>
+    <string name="advertisement">广告骚扰</string>
+    <string name="pornographic">色情低俗</string>
+    <string name="other_notice">其他</string>
+    <string name="supplement_info">补充说明</string>
+    <string name="hint_supplement">请输入补充内容...</string>
+    <string name="commit">提交</string>
+    <string name="report_notive">请填写举报理由</string>
+    <string name="transfer_onwer">转让圈主</string>
+    <string name="transfer_sure">确认转让圈子?</string>
+    <string name="transfer_group_failer">已是圈主</string>
+    <string name="add_to_friend">加为好友</string>
+    <string name="msg_shield">屏蔽此人</string>
+    <string name="detail_info">详细资料</string>
+    <string name="invite_user_from_contact">邀请通讯录好友加入圈子</string>
+    <string name="invite_user_from_other">邀请其他人加入圈子</string>
+    <string name="choose_least_one_friend">请先选择好友!</string>
+    <string name="write_invite_reason">验证信息不能为空</string>
+    <string name="invite_send">邀请已发送</string>
+    <string name="invite_reason_notice">您需要发送验证申请，等待验证通过</string>
+    <string name="verify_msg">验证消息</string>
+    <string name="get_user_info_failture">获取用户信息失败!</string>
+    <string name="forbid_show_self_info">不能查看自己的信息</string>
+    <string name="collection">收藏</string>
+    <string name="recommend_user">可能认识的人</string>
+    <string name="show_verify_msg">查看消息验证</string>
+    <string name="messages">消息</string>
+    <string name="find_user">找人</string>
+    <string name="find_group">找圈子</string>
+    <string name="input_search_key">请输入搜索内容</string>
+    <string name="group_name_title">圈子名称</string>
+    <string name="input_group_name">请输入圈子名称</string>
+    <string name="setting_msg_notice">新消息提醒</string>
+    <string name="setting_verify_friend">加我为好友时需要验证</string>
+    <string name="setting_allow_receive_stranger_msg">允许陌生人给我发消息</string>
+    <string name="black_manager">黑名单管理</string>
+    <string name="telephone_member">手机联系人</string>
+    <string name="user_name_find">姓名查找</string>
+
+    <string-array name="report_item">
+        <item>色情低俗</item>
+        <item>广告骚扰</item>
+        <item>政治敏感</item>
+        <item>传播谣言</item>
+        <item>欺诈骗钱</item>
+        <item>违法</item>
+        <item>虚假身份</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="join">加入</string>
+    <string name="hint_find_user">手机号/思扣号</string>
+    <string name="hint_find_group">圈子号/圈子名称</string>
+    <string name="find_user_and_group">找人/找圈子</string>
+    <string name="may_interest_group">可能感兴趣的圈子</string>
+    <string name="apply_join">申请加入</string>
+    <string name="user_id_is_null">用户id不能为空</string>
+    <string name="group_id_is_null">圈子id不能为空</string>
+    <string name="no_matcher_user">没找到匹配的相应的用户</string>
+    <string name="no_matcher_group">没有匹配到相应的圈子</string>
+    <string name="family_name">姓名</string>
+    <string name="search_by_name">姓名查找</string>
+    <string name="find">查找</string>
+    <string name="has_join">已添加</string>
+    <string name="no_recommend_user">暂无推荐的用户</string>
+    <string name="telephone_contact">查看手机通讯录</string>
+    <string name="no_matcher_black">暂无黑名单用户</string>
+    <string name="black_user">黑名单</string>
+    <string name="load_user_info_failure">获取用户信息失败</string>
+    <string name="group_name_is_null">请输入圈子名称</string>
+    <string name="forbid_see_group_info">您已退出圈子, 不能查看该圈子信息!</string>
+    <string name="other_msg_notice">其它通知</string>
+    <string name="temp_no_data">暂无数据</string>
+    <string name="operation_failture">操作失败</string>
+    <string name="friend_notice_message">%s申请加您为好友</string>
+    <string name="group_verify_notice_message">%1$s邀请您加入\'%2$s\'圈子</string>
+    <string name="over_agree">已同意</string>
+    <string name="transfer_group_failture">转让圈子失败</string>
+    <string name="load_data_failture">加载数据失败</string>
+    <string name="content_is_null">内容不能为空</string>
+    <string name="committing">正在提交...</string>
+    <string name="loading_data">正在加载...</string>
+    <string name="waiting">请稍后...</string>
+    <string name="querying">正在查询...</string>
+    <string name="delete_failture">删除失败</string>
+    <string name="sending">正在发送...</string>
+    <string name="updating">正在更新...</string>
+    <string name="modify_failture">修改失败</string>
+    <string name="system_notice">系统消息</string>
+    <string name="sure">确定</string>
+    <string name="sure_to_transfer_msg">您确认将消息转发%s吗?</string>
+    <string name="sure_to_send_zxing">您确认发送二维码给%s吗?</string>
+    <string name="label">思扣</string>
+    <string name="image_unexist">无法找到图片!</string>
+
+    <string-array name="txt_selection_item">
+        <item>复制</item>
+        <item>删除</item>
+        <item>转发</item>
+    </string-array>
+    <string-array name="location_selection_item">
+        <item>删除</item>
+        <item>转发</item>
+    </string-array>
+    <string-array name="voice_selection_item">
+        <item>删除</item>
+    </string-array>
+    <string-array name="user_card_selection_item">
+        <item>删除</item>
+    </string-array>
+    <string-array name="video_selection_item">
+        <item>删除</item>
+        <item>转发</item>
+    </string-array>
+    <string-array name="image_selection_item">
+        <item>删除</item>
+        <item>转发</item>
+    </string-array>
+</resources>

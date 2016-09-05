@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_rockcallrecord"
+        layout="@layout/layout_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_classlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_300"
+        android:descendantFocusability="afterDescendants"/>
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:paddingLeft="@dimen/px_35"
+        android:gravity="center_vertical"/>
+
+    <com.thinkcoo.mobile.presentation.views.component.RockStudentResultListView
+        android:id="@+id/layout_rock_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </com.thinkcoo.mobile.presentation.views.component.RockStudentResultListView>
+</LinearLayout>

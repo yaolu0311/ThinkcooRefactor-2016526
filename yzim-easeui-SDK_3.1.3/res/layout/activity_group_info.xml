@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yz.im.ui.activity.GroupInfoActivity">
+
+    <include
+        layout="@layout/layout_hx_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/part_head"
+                layout="@layout/head_group_info"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_30"
+                android:background="@color/background"/>
+
+            <include
+                layout="@layout/item_group_name"/>
+
+            <include
+                layout="@layout/item_group_head"/>
+
+            <include
+                layout="@layout/item_group_introduction"/>
+
+            <include
+                layout="@layout/item_group_member"/>
+
+            <include
+                layout="@layout/item_group_remark_name"/>
+
+           <include
+               layout="@layout/item_group_transfer"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_30"
+                android:background="@color/background"/>
+
+           <include
+               layout="@layout/item_group_msg_top"/>
+
+            <include
+                layout="@layout/item_group_msg_disturb"/>
+
+           <include
+               layout="@layout/item_group_msg_report"/>
+
+            <Button
+                android:id="@+id/btn_group_chat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_120"
+                android:layout_below="@+id/item_group_report"
+                android:layout_marginLeft="@dimen/px_48"
+                android:layout_marginRight="@dimen/px_48"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@drawable/selector_shape_round_blue"
+                android:gravity="center"
+                android:text="@string/group_all_chat"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/px_44"/>
+
+            <Button
+                android:id="@+id/btn_group_quit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_120"
+                android:layout_marginTop="@dimen/px_25"
+                android:layout_marginLeft="@dimen/px_48"
+                android:layout_marginRight="@dimen/px_48"
+                android:background="@drawable/selector_shape_round_white"
+                android:gravity="center"
+                android:text="@string/quit_group"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

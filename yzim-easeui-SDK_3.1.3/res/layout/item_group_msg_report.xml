@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_group_report"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_144"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_143">
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_44"
+            android:text="@string/group_report"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <ImageView
+            android:id="@+id/img_group_report_arrow"
+            style="@style/icon_daYu"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"/>
+
+</LinearLayout>

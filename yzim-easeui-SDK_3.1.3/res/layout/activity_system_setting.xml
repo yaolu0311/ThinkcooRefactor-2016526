@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yz.im.ui.activity.SystemSettingActivity">
+
+    <include
+        layout="@layout/layout_hx_title"/>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/include_setting"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px_44">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_msg_notice"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <RelativeLayout
+            android:id="@+id/setting_msg_notice"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/slipButton_switch1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_111"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_setting"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px_44">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_verify_friend"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <RelativeLayout
+            android:id="@+id/setting_friend_verify"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/slipButton_switch2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_111"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_setting1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px_44">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_allow_receive_stranger_msg"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <RelativeLayout
+            android:id="@+id/setting_stranger_msg"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/slipButton_switch3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_111"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_setting2"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px_44">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/black_manager"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <ImageView
+            style="@style/icon_daYu"/>
+    </RelativeLayout>
+</LinearLayout>

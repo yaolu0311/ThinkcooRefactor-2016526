@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginTop="@dimen/px_27"
+        android:maxLines="2"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_44" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_release_book_list_txt_goods_title"
+        android:layout_below="@id/item_release_book_list_txt_goods_title"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="￥21.00"
+        android:textColor="@color/red"
+        android:textSize="@dimen/px_36"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_release_book_list_txt_goods_title"
+        android:layout_below="@id/item_release_book_list_txt_goods_price"
+        android:layout_marginTop="@dimen/px_14"
+        android:singleLine="true"
+        android:text="@string/trade_browse_times"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_goods_browcounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:singleLine="true"
+        android:text="18次"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_32" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_goods_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px_27"
+        android:text="2018-01-01"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/px_32"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/view_line_interval"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="@dimen/px_27" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_release_book_list_txt_delete"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/item_release_book_list_txt_delete"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/refresh"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/item_release_book_list_txt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_release_book_list_txt_refresh"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_toLeftOf="@id/item_release_book_list_txt_refresh"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="@string/modify"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/px_36" />
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@id/item_release_book_list_txt_update"
+        android:layout_marginTop="@dimen/px_14" />
+
+</RelativeLayout>

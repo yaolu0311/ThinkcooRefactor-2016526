@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/color_title"
+    tools:context="com.thinkcoo.mobile.presentation.views.activitys.CreateClassActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recyclerView"
+        android:layout_above="@id/editText_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" />
+    <EditText
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/editText_content"
+        android:hint="输入内容"/>
+
+    <Button
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:id="@+id/enter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/apply_project_shape"
+    android:orientation="vertical"
+    android:layout_margin="8dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:text="申请此项目时,会将您的简历发送给该公司"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_40" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_5"
+        android:layout_marginRight="@dimen/px_5"
+        android:layout_marginTop="@dimen/px_20" >
+
+        <RelativeLayout
+            android:id="@+id/setForResource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20" >
+
+            
+        </RelativeLayout>
+
+        
+
+        <TextView
+            android:id="@+id/item_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_100"
+            android:paddingBottom="@dimen/px_10"
+            android:paddingTop="@dimen/px_10"
+            android:text="完善简历"
+            android:textColor="@color/blue_title"
+            android:textSize="@dimen/px_36" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px_2"
+        android:layout_marginLeft="@dimen/px_2"
+        android:layout_marginRight="@dimen/px_2"
+        android:layout_marginTop="@dimen/px_5"
+        android:background="@color/text_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setresource_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <View
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:background="@color/text_2" />
+
+        <TextView
+            android:id="@+id/setresource_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:id="@+id/rl_my_info_but"
+        android:layout_below="@id/include"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_272"
+        android:layout_marginTop="@dimen/px_43"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px_43">
+
+        <ImageView
+            android:id="@+id/iv_headPortrait"
+
+            android:layout_width="@dimen/px_195"
+            android:layout_height="@dimen/px_195"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_21"/>
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_thinkcooid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_signature"
+            android:layout_alignLeft="@+id/tv_userName"
+            android:singleLine="true"
+            android:text="ddd"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36"/>
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_signature"
+            android:layout_alignTop="@+id/iv_headPortrait"
+            android:singleLine="true"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_headPortrait"
+            android:layout_marginLeft="@dimen/px_49"
+            android:layout_toRightOf="@+id/iv_headPortrait"
+            android:paddingRight="@dimen/px_43"
+            android:singleLine="true"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vew_line_fifv"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_my_info_but"/>
+
+    <View
+        android:id="@+id/vew_line_six"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/vew_line_fifv"
+        android:layout_marginTop="@dimen/px_43"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/vew_line_six"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            style="@style/icon"
+            android:layout_marginLeft="@dimen/px_35"
+            android:src="@mipmap/my_state"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon1"
+            android:text="@string/my_state"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/personal_view_zt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/rl_my_state"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_harvest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/personal_view_zt"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            style="@style/icon"
+            android:layout_marginLeft="@dimen/px_35"
+            android:src="@mipmap/my_harvest"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon2"
+            android:text="@string/personal_fragment_sh"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/personal_view_sh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/rl_my_harvest"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_skills"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/personal_view_sh"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            style="@style/icon"
+            android:layout_marginLeft="@dimen/px_35"
+            android:src="@mipmap/my_skill"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon3"
+            android:text="@string/getjob_resume_jn"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/personal_view_jn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/rl_my_skills"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_hobby"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/personal_view_jn"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_icon4"
+            style="@style/icon"
+            android:layout_marginLeft="@dimen/px_35"
+            android:src="@mipmap/my_hobby"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon4"
+            android:text="@string/getjob_resume_ah"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vew_line_one"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_my_hobby"/>
+
+    <View
+        android:id="@+id/vew_line_two"
+        style="@style/view_line_edge"
+        android:layout_below="@+id/vew_line_one"
+        android:layout_marginTop="@dimen/px_43"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/vew_line_two"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_icon5"
+            style="@style/icon"
+            android:layout_marginLeft="@dimen/px_35"
+            android:src="@mipmap/my_setting"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_icon5"
+            android:text="@string/setting"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"
+        android:layout_below="@+id/rl_setting"/>
+
+</RelativeLayout>

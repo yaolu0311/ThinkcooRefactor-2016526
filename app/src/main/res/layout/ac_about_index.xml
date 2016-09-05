@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/px_136" >
+
+        <ImageView
+            android:id="@+id/ac_about_iage"
+            android:layout_width="@dimen/px_272"
+            android:layout_height="@dimen/px_272"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/loginlogo" />
+
+        <TextView
+            android:id="@+id/ac_about_versions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ac_about_iage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_21"
+            android:gravity="center"
+            android:text="@string/personal_about_bbh"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <!-- 分享给好友 -->
+        <RelativeLayout
+            android:id="@+id/ac_personal_about_Share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_about_versions"
+            android:layout_marginTop="@dimen/px_81"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_130"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_43"
+                android:text="@string/personal_about_fx"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+        
+          <!-- 邀请 好友-->
+        
+        <View
+            android:id="@+id/view_personal_invite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/ac_personal_about_Share"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/ac_layout_personal_invite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_130"
+            android:layout_below="@+id/view_personal_invite"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_130"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_43"
+                android:text="@string/personal_personalabout_invite_friend"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_personal_aboutone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/ac_layout_personal_invite"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/ac_personal_about_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_personal_aboutone"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_130"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_43"
+                android:text="@string/personal_about_fk"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_personal_abouttwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/ac_personal_about_opinion"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/ac_personal_about_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_personal_abouttwo"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_130"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_43"
+                android:text="@string/personal_about_gx"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+
+        
+      
+        
+        
+        <View
+            android:id="@+id/view_personal_aboutthree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/ac_personal_about_upload"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/ac_personal_about_my"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_130"
+            android:layout_below="@+id/view_personal_aboutthree"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_130"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_43"
+                android:text="@string/personal_personalabout_my"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44" />
+
+            <ImageView
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/view_personal_aboutl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/ac_personal_about_my"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+</RelativeLayout>

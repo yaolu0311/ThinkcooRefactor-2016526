@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_131">
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/shurumima"
+        android:inputType="text"
+        android:paddingLeft="@dimen/px_22"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_44"/>
+
+
+    <ImageView
+        android:id="@+id/iv_change_password_visible"
+        android:layout_width="@dimen/px_131"
+        android:layout_height="@dimen/px_131"
+        android:layout_alignBottom="@+id/et_password"
+        android:layout_alignRight="@+id/et_password"
+        android:layout_alignTop="@+id/et_password"
+        android:padding="@dimen/px_33"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_password_normal"/>
+
+</RelativeLayout>

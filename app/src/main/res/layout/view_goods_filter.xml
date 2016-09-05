@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/px_220">
+
+    <com.thinkcoo.mobile.presentation.views.component.GoodsFilterItemView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/category_item_view"/>
+
+    <View
+        android:id="@+id/goods_filter_view_line_1"
+        android:layout_width="@dimen/px_2"
+        android:layout_height="match_parent"
+        android:background="@color/color_smoke"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        />
+
+    <com.thinkcoo.mobile.presentation.views.component.GoodsFilterItemView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/school_item_view"/>
+
+    <View
+        android:id="@+id/goods_filter_view_line_2"
+        android:layout_width="@dimen/px_2"
+        android:layout_height="match_parent"
+        android:background="@color/color_smoke"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        />
+
+    <com.thinkcoo.mobile.presentation.views.component.GoodsFilterItemView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/price_item_view"/>
+
+    <View
+        android:id="@+id/goods_filter_view_line_3"
+        android:layout_width="@dimen/px_2"
+        android:layout_height="match_parent"
+        android:background="@color/color_smoke"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:visibility="gone"
+        />
+
+    <com.thinkcoo.mobile.presentation.views.component.GoodsFilterItemView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/distance_item_view"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

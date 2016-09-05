@@ -1,0 +1,315 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+         >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/lauoyt01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_collect_project_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:textColor="@color/font5"
+                    android:textSize="@dimen/px_44" />
+
+                <TextView
+                    android:id="@+id/tv_collect_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_collect_project_name"
+                    android:layout_below="@+id/tv_collect_project_name"
+                    android:layout_marginTop="@dimen/px_44"
+                    android:paddingBottom="@dimen/px_22"
+                    android:layout_toLeftOf="@+id/tv_collect_project_pubtime"
+                    android:paddingRight="@dimen/px_15"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/tv_collect_project_pubtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_collect_company_name"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+            </RelativeLayout>
+            
+            <View 
+                android:id="@+id/view01"
+                 android:layout_below="@+id/lauoyt01"
+                 style="@style/view_line_edge"
+                />
+
+            <View 
+               android:id="@+id/view02"
+               android:layout_below="@+id/view01"
+               android:layout_marginTop="@dimen/px_30"
+               style="@style/view_line_edge"
+                />
+            <RelativeLayout
+                android:id="@+id/layout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view02"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_collect_project_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:text="项目周期：" 
+                    />
+                <TextView
+                    android:id="@+id/tv_collect_project_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:layout_toRightOf="@+id/tv_collect_project_time_text"
+                    android:layout_alignTop="@+id/tv_collect_project_time_text"
+                     />
+
+                
+                  <TextView
+                    android:id="@+id/tv_collect_project_pay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_collect_project_time"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_11"
+                     android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:text="预算投入：" />
+                
+                <TextView
+                    android:id="@+id/ac_collect_project_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:layout_toRightOf="@+id/tv_collect_project_pay_text"
+                    android:layout_alignTop="@+id/tv_collect_project_pay_text"
+                    />
+                 <TextView
+                    android:id="@+id/tv_collect_project_num_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_11"
+                    android:paddingBottom="@dimen/px_22"
+                     android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:layout_below="@+id/tv_collect_project_pay_text"
+                    android:text="联系电话：" />
+                 
+                  <TextView
+                    android:id="@+id/ac_collect_project_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"
+                    android:layout_toRightOf="@+id/tv_collect_project_num_text"
+                    android:layout_alignTop="@+id/tv_collect_project_num_text"
+                    />
+            </RelativeLayout>
+            
+
+            <View 
+                android:id="@+id/view03"
+                style="@style/view_line_edge"
+                android:layout_below="@+id/layout02"
+                />
+            
+             <View 
+                android:id="@+id/view04"
+                style="@style/view_line_edge"
+                android:layout_below="@+id/view03"
+                android:layout_marginTop="@dimen/px_30"
+                />
+            
+            <RelativeLayout
+                android:id="@+id/layout03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view04"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_collect_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:textColor="@color/font5"
+                    android:textSize="@dimen/px_44" />
+
+                <View
+                    android:id="@+id/view_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@+id/tv_collect_text01"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:background="@color/font8" />
+
+                <TextView
+                    android:id="@+id/tv_collecy_project_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_01"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:lineSpacingExtra="@dimen/px_11"
+                     android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/px_82"
+                    android:layout_below="@+id/tv_collecy_project_about"
+                    android:layout_marginBottom="@dimen/px_100"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/tv_collect_infor_project_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_above="@+id/tv_collect_layout04"
+        android:background="@color/font8" />
+
+    <LinearLayout
+        android:id="@+id/tv_collect_layout04"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_153"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_title"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/course_button_selector"
+            android:gravity="center_vertical">
+            
+
+            <ImageView
+                android:id="@+id/ac_image_apply"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/px_22"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/ac_text_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_image_apply"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"/>
+            
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="@dimen/px_1"
+            android:layout_height="match_parent"
+            android:background="@color/font8"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/course_button_selector"
+             android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ac_image_collect"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/px_22"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/ac_text_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_image_collect"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="@dimen/px_1"
+            android:layout_height="match_parent"
+            android:background="@color/font8"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/course_button_selector"
+            android:gravity="center_vertical"
+             >
+
+            <ImageView
+                android:id="@+id/ac_image_contact"
+                android:layout_width="@dimen/px_82"
+                android:layout_height="@dimen/px_82"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/px_22"
+                android:scaleType="centerInside" 
+                />
+
+            <TextView
+                android:id="@+id/ac_text_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_image_contact"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/font3"
+                android:textSize="@dimen/px_36"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

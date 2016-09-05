@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_144"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/px_44">
+
+    <TextView
+        android:id="@+id/tv_signature_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/signature"
+        android:textColor="@color/text_1"
+        android:textSize="@dimen/px_44"/>
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_48"
+        android:layout_toRightOf="@+id/tv_signature_left"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:maxLines="1"
+        android:textColor="@color/font2"
+        android:textSize="@dimen/px_36"/>
+
+</RelativeLayout>

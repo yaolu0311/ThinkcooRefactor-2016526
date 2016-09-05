@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tag="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ac_title_skill_hobby" />
+
+    <com.thinkcoo.mobile.presentation.views.component.TagFlowLayout
+        android:id="@+id/custom_user_skill_hobby"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="10dp"
+        tag:max_select="-1" />
+
+
+</RelativeLayout>

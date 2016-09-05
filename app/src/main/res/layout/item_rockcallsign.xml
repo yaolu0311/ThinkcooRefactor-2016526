@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_6"
+        android:layout_width="@dimen/px_230"
+        android:layout_height="@dimen/px_230"
+        android:layout_below="@+id/view"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sign_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="签到成功"
+            android:textColor="@color/text_2"
+            android:gravity="center_vertical"
+            android:background="@drawable/user_gray_shape"
+            />
+        <View
+            android:layout_width="@dimen/px_1"
+            android:layout_height="5dp"
+            android:background="@color/line" />
+        <TextView
+            android:id="@+id/sign_no"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_2"
+            android:background="@drawable/user_gray_shape"
+            android:text="签到失败"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

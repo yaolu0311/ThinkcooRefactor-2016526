@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title"
+    tools:context="com.thinkcoo.mobile.presentation.views.activitys.CreateClassActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:layout_below="@id/include"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_shcool"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="@dimen/px_200"
+            android:text="学校名称" />
+
+        <View
+            android:layout_centerVertical="true"
+            android:id="@+id/school_line"
+            android:layout_width="@dimen/px_2"
+            android:layout_height="@dimen/px_80"
+            android:layout_toRightOf="@id/txt_shcool"
+            android:background="@color/color_title"
+            android:hint="如 石油大学" />
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/edit_shcool_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_toRightOf="@id/school_line"
+            android:background="@null"
+            android:hint="如 石油大学" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:layout_below="@id/firstLayout"
+        android:layout_marginTop="@dimen/px_2"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:minWidth="@dimen/px_200"
+
+            android:text="专业班级" />
+
+        <View
+            android:layout_centerVertical="true"
+            android:id="@+id/class_line"
+            android:layout_width="@dimen/px_2"
+            android:layout_height="@dimen/px_80"
+            android:layout_toRightOf="@id/txt_class"
+            android:background="@color/color_title"
+            android:hint="如 石油大学" />
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/edit_clas_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_toRightOf="@id/txt_class"
+            android:background="@null"
+            android:hint="如 石油工程1601" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_add"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/add_group"
+
+
+        />
+    <RelativeLayout
+        android:id="@+id/threeLayout"
+        android:layout_above="@id/text_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/secondLayout"
+        android:layout_marginTop="@dimen/px_60">
+
+
+
+            <TextView
+                android:id="@+id/text_serch"
+                android:layout_width="@dimen/px_800"
+                android:layout_height="@dimen/px_110"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_shape_round_blue"
+                android:gravity="center"
+                android:text="搜索"
+
+                android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/serch_layout"
+            android:layout_below="@id/text_serch"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_all_check"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="全选" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerView"-->
+                <!--android:paddingLeft="@dimen/px_40"-->
+                <!--android:paddingRight="@dimen/px_40"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/text_all_check"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:scrollbars="none" />-->
+            <FrameLayout
+                android:id="@+id/fragement_student"
+            android:paddingLeft="@dimen/px_40"
+            android:paddingRight="@dimen/px_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_below="@id/text_all_check"
+                android:layout_marginTop="5dp" >
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_below="@id/text_serch"
+            android:id="@+id/no_serch_layout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/text_noserch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sorry"
+                android:layout_centerHorizontal="true"
+              />
+
+            <TextView
+                android:layout_marginTop="@dimen/px_30"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/confirm"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_noserch"
+
+                android:text="确认" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

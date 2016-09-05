@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_160"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rowBG"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_159"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="@dimen/px_159"
+            android:background="#a2cbff"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/delete_button"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_159"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_head"
+            style="@style/contact_item_style"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_44"
+            android:scaleType="centerInside"/>
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/px_10"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_toLeftOf="@+id/btn_item_right"
+            android:layout_toRightOf="@+id/img_head"
+            android:maxLines="1"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_40"/>
+
+
+        <FrameLayout
+            android:id="@+id/btn_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_un_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/px_44"
+                android:background="@drawable/edittext_bg"
+                android:padding="@dimen/px_20"
+                android:text="@string/button_add"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_35"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_over_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/px_44"
+                android:padding="@dimen/px_20"
+                android:text="@string/has_join"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_35"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

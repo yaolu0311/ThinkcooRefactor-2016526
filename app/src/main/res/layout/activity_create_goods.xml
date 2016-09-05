@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title"
+                android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:scrollbars="none" >  
+
+        <RelativeLayout
+            android:id="@+id/create_goods_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ac_sell_goods_details_old"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="75dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/ac_sell_goods_details_old_name"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_44"
+            android:text="@string/qulity"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <TextView
+            android:id="@+id/ac_sell_goods_details_old_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ac_sell_goods_details_old_flag"
+            android:layout_toRightOf="@+id/ac_sell_goods_details_old_name"
+            android:gravity="center|right"
+            android:hint="@string/select_please"
+            android:textColor="@color/text_2"
+            android:textColorHint="@color/text_3"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            android:id="@+id/ac_sell_goods_details_old_flag"
+            style="@style/dayu_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

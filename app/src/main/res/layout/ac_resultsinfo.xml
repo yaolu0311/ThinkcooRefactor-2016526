@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/ac_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_marginLeft="@dimen/px_14"
+        android:layout_marginRight="@dimen/px_14"
+        android:layout_marginTop="@dimen/px_14"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ac_score_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:text="@string/soft_zuigaofen" />
+
+        <TextView
+            android:id="@+id/ac_score_num_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_20"
+            android:gravity="center_vertical|left"
+            android:text="--" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/px_22"
+            android:id="@+id/ac_low_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:text="@string/soft_zuidifen" />
+
+        <TextView
+            android:id="@+id/ac_score_num_low"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_20"
+            android:gravity="center_vertical|left"
+            android:text="--" />
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/px_2"
+	    android:background="@color/line"
+	    android:layout_marginLeft="@dimen/px_44"
+	    android:layout_marginRight="@dimen/px_44"
+	    />
+    <LinearLayout
+        android:id="@+id/ac_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_marginLeft="@dimen/px_14"
+        android:layout_marginRight="@dimen/px_14"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ac_average_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:text="@string/soft_pingjunfen" />
+
+        <TextView
+            android:id="@+id/ac_score_num_average"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/px_20"
+            android:gravity="center_vertical|left"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/ac_score_num_divide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:text="@string/soft_junfangcha" />
+
+        <TextView
+            android:id="@+id/ac_divide_num_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/px_20"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_marginTop="@dimen/px_14"
+        android:background="@color/co_analysis"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ac_stu_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/xuehao" />
+
+        <TextView
+            android:id="@+id/ac_stu_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/xingming" />
+
+        <TextView
+            android:id="@+id/ac_stu_endresult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="@string/soft_zuizhongchengji" />
+
+        <TextView
+            android:id="@+id/ac_stu_dayresult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="@string/soft_pingshichengji" />
+
+        <TextView
+            android:id="@+id/ac_stu_testresult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="@string/soft_kaoshichengji" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ac_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_1"
+        android:background="@color/color_title" />
+
+    <ListView
+        android:id="@+id/ac_students"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

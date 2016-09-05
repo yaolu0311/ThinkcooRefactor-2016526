@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/ac_text_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:textColor="@color/font5"
+                    android:textSize="@dimen/px_44" />
+
+                <TextView
+                    android:id="@+id/ac_text_hangye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ac_text_company_name"
+                    android:layout_below="@+id/ac_text_company_name"
+                    android:layout_marginRight="@dimen/px_15"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:text="@string/getjob_industry"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                 <TextView
+                    android:id="@+id/ac_text_hangye_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ac_text_company_name"
+                    android:layout_toRightOf="@+id/ac_text_hangye"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+                
+                
+                <TextView
+                    android:id="@+id/ac_text_xingzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ac_text_company_name"
+                    android:layout_below="@+id/ac_text_hangye_name"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/ac_text_guimo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ac_text_company_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ac_text_xingzhi"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/ac_text_wangzhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ac_text_company_name"
+                    android:layout_below="@+id/ac_text_guimo"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:paddingBottom="@dimen/px_22"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                <View
+                    android:id="@+id/ac_linee_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/ac_text_wangzhan"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/ac_text_dizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ac_linee_one"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:paddingBottom="@dimen/px_22"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/ac_linee_twow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:layout_below="@id/layout01"
+                android:background="@color/line" />
+
+            <View
+                android:id="@+id/ac_linee_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:layout_below="@id/ac_linee_twow"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/layout03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ac_linee_two"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/ac_company_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:paddingBottom="@dimen/px_22"
+                    android:textColor="@color/font5"
+                    android:textSize="@dimen/px_44" />
+
+                <View
+                    android:id="@+id/ac_linee_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/ac_company_text"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/ac_text_jianjie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ac_company_text"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_22"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/font3"
+                    android:textSize="@dimen/px_36" />
+
+                <ImageView
+                    android:id="@+id/ac_company_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ac_text_jianjie"
+                    android:layout_marginBottom="@dimen/px_28"
+                    android:layout_marginLeft="@dimen/px_44"
+                    android:layout_marginRight="@dimen/px_44"
+                    android:layout_marginTop="@dimen/px_27" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

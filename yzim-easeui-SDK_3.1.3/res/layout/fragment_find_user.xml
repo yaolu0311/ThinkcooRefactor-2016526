@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!-- 精准查询 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_find_by_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134" >
+
+        <ImageView
+            android:id="@+id/img_find_user"
+            style="@style/member_item_style"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px_33"
+            android:layout_marginLeft="@dimen/px_11"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_find_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_find_user"
+            android:text="@string/user_name_find"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36" />
+
+        <ImageView
+            style="@style/icon_daYu" />
+            
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"/>
+
+    <!-- 手机联系人 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/view01" >
+
+        <ImageView
+            android:id="@+id/icon_phone_number"
+            style="@style/member_item_style"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px_33"
+            android:layout_marginLeft="@dimen/px_11"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_phone_number" />
+        
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon_phone_number"
+            android:text="@string/telephone_member"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_36"/>
+
+        <ImageView
+            style="@style/icon_daYu"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_edge"/>
+
+    <!-- 可能认识的人 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_phone_number"
+        layout="@layout/layout_recommend_user"/>
+
+</LinearLayout>

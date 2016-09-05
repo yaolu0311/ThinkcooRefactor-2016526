@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"/>
+
+    <com.thinkcoo.mobile.presentation.views.component.ClearAndCipherEditText
+        android:id="@+id/ac_input_pwd_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/include"
+        android:layout_margin="@dimen/px_44" />
+
+    <EditText
+        android:id="@+id/et_accountname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/ac_input_pwd_lay"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_44"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/xingming"
+        android:inputType="text"
+        android:paddingLeft="@dimen/px_22"
+        android:textColor="@color/text_2"
+        android:textColorHint="@color/text_3"
+        android:textSize="@dimen/px_44"/>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_131"
+        android:layout_below="@+id/et_accountname"
+        android:layout_margin="@dimen/px_44"
+        android:background="@drawable/selector_shape_round_blue"
+        android:text="@string/tijiao"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_44"/>
+
+</RelativeLayout>

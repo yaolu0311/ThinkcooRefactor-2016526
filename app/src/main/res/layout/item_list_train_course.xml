@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rowBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="@dimen/px_197"
+            android:background="#a2cbff"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/delete_button"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowFG"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_220"
+        android:paddingLeft="@dimen/px_13"
+        android:paddingRight="@dimen/px_43">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_train_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_marginTop="@dimen/px_22"
+            android:text="银行考试"
+            android:textColor="@color/font5"
+            android:textSize="@dimen/px_44" />
+
+        <TextView
+            android:id="@+id/tv_train_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_train_course"
+            android:layout_below="@+id/tv_train_course"
+            android:layout_marginRight="@dimen/px_44"
+            android:layout_marginTop="@dimen/px_22"
+            android:ellipsize="end"
+            android:maxEms="25"
+            android:singleLine="true"
+            android:text="西安教育"
+            android:textColor="@color/font3"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/tv_train_courseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_train_course"
+            android:layout_below="@+id/tv_train_school"
+            android:layout_marginTop="@dimen/view_2"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:singleLine="true"
+            android:text="业余班"
+            android:textColor="@color/font3"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/tv_train_coursePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_train_courseType"
+            android:layout_marginBottom="@dimen/px_22"
+            android:layout_marginRight="@dimen/px_44"
+            android:text="价格"
+            android:textColor="@color/font3"
+            android:textSize="@dimen/px_36" />
+    </RelativeLayout>
+</RelativeLayout>

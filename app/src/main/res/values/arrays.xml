@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 选择性别pop -->
+    <string-array name="sheetItem_genders">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <!-- 选择性别pop -->
+    <string-array name="sheetItem_delete_class">
+        <item>删除班组</item>
+    </string-array>
+    <string-array name="sheetItem_photos">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </string-array>
+
+    <string-array name="user_status_list_sheet_dialog">
+        <item>学历教育</item>
+        <item>培训进修</item>
+        <item>兼职工作</item>
+        <item>全职工作</item>
+    </string-array>
+    <string-array name="sheetItem_isMarried">
+        <item>已婚</item>
+        <item>未婚</item>
+    </string-array>
+
+    <string-array name="rockcall_distance">
+        <item>30米</item>
+        <item>50米</item>
+        <item>70米</item>
+    </string-array>
+
+    <!-- 找培训搜索字段 -->
+    <string-array name="train_place">
+        <item>不限</item>
+        <item>雁塔区</item>
+        <item>莲湖区</item>
+        <item>新城区</item>
+    </string-array>
+    <string-array name="train_price">
+        <item>不限</item>
+        <item>价格从低到高</item>
+        <item>价格从高到低</item>
+    </string-array>
+    <string-array name="train_course_type">
+        <item>不限</item>
+        <item>全日制</item>
+        <item>周末班</item>
+        <item>晚班</item>
+        <item>业余班</item>
+    </string-array>
+    <string-array name="train_time">
+        <item>不限</item>
+        <item>一周之内</item>
+        <item>两周之内</item>
+        <item>三周之内</item>
+        <item>一月之内</item>
+        <item>一月之后</item>
+    </string-array>
+
+    <string-array name="schedule_types">
+        <item>管理</item>
+        <item>授课</item>
+        <item>自学</item>
+        <item>活动 </item>
+    </string-array>
+
+    <string-array name="repeats">
+        <item>每周日</item>
+        <item>每周一</item>
+        <item>每周二</item>
+        <item>每周三</item>
+        <item>每周四</item>
+        <item>每周五</item>
+        <item>每周六</item>
+    </string-array>
+    <string-array name="repeats_abbre">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="reminder_time">
+        <item>无需提醒</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>120分钟</item>
+    </string-array>
+
+    <string-array name="reminder_time_value">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+    <!-- 分享字段 -PersonalAboutIndexActivity -->
+    <string-array name="share_platform_names">
+        <item>微信好友</item>
+        <item>微信朋友圈</item>
+        <item>QQ好友</item>
+        <item>QQ空间</item>
+        <item>新浪微博</item>
+    </string-array>
+</resources>

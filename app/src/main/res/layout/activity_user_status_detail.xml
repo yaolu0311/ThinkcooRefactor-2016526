@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thinkcoo.mobile.presentation.views.activitys.UserStatusDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@+id/vs_user_status_education"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/user_education_status_layout"/>
+
+        <ViewStub
+            android:id="@+id/vs_user_status_train"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/user_training_status_detail"/>
+
+        <ViewStub
+            android:id="@+id/vs_user_status_work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/user_work_status_layout"/>
+    </RelativeLayout>
+
+</ScrollView>

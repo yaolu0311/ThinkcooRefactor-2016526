@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_num_safety"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/px_43"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="@string/personal_setinde_aq"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_personal_setone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/layout_num_safety"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_grade_integral"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/layout_num_safety"
+        android:layout_marginTop="@dimen/px_1"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="@string/personal_setinde_dj"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_personal_settwo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/layout_grade_integral"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_134"
+        android:layout_below="@+id/layout_grade_integral"
+        android:layout_marginTop="@dimen/px_1"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_43"
+            android:gravity="center_vertical"
+            android:text="@string/personal_setindex"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            style="@style/dayu_icon"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_personal_setthree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/layout_about"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/layout_exit_login"
+        style="@style/button_icon"
+        android:layout_below="@+id/layout_about"
+        android:text="@string/button_logout"
+        android:textSize="@dimen/px_44" />
+
+</RelativeLayout>

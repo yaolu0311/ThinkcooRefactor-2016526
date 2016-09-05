@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_harvest_detail">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 名称 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_16"
+                android:text="@string/harvest_name"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/et_harvest_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_harvest_name"
+                android:background="@null"
+                android:maxLength="15"
+                android:hint="@string/required"
+                android:gravity="right"
+                android:minWidth="150dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/rl_name_container"
+            android:background="@color/background"/>
+
+        <!-- 授予单位 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_granted_det_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_line_1"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/harvest_granted_department"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_44"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/et_granted_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_department"
+                android:background="@null"
+                android:hint="@string/required"
+                android:maxLength="15"
+                android:gravity="right"
+                android:minWidth="150dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:layout_width="@dimen/view_48"
+                android:layout_height="@dimen/view_48"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:padding="@dimen/view_12"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/rl_granted_det_container"
+            android:background="@color/background"/>
+        <!-- 授予时间 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_line_2"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_44"
+                android:text="@string/harvest_granted_time"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/tv_harvest_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:hint="@string/required"
+                android:layout_marginLeft="@dimen/px_44"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="@dimen/view_48"
+                android:layout_height="@dimen/view_48"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/view_12"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_1"
+            android:layout_below="@+id/rl_time_container"
+            android:background="@color/background"/>
+        <!-- 级别 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_level_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_line_3"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_44"
+                android:text="@string/harvest_level"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/et_harvest_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_level"
+                android:paddingLeft="50dp"
+                android:paddingRight="35dp"
+                android:hint="@string/optional"
+                android:gravity="right"
+                android:background="@null"
+                android:maxLength="15"
+                android:minWidth="150dp"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_1"
+            android:layout_below="@+id/rl_level_container"
+            android:background="@color/background"/>
+        <!-- 排名 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_rank_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_line_4"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_44"
+                android:text="@string/harvest_rank"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/et_harvest_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_rank"
+                android:background="@null"
+                android:maxLength="15"
+                android:hint="@string/optional"
+                android:gravity="right"
+                android:paddingLeft="50dp"
+                android:paddingRight="35dp"
+                android:minWidth="150dp"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/ac_harvest_ranking_flag"
+                android:layout_width="@dimen/view_48"
+                android:layout_height="@dimen/view_48"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:padding="@dimen/view_12"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/rl_rank_container"
+            android:background="@color/background"/>
+        <!-- 附件 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_attachment_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/view_line_5"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_harvest_attachment"
+                android:layout_width="@dimen/view_110"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_44"
+                android:text="@string/harvest_attachment"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@+id/rl_attachment_container"
+            android:background="@color/background"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gv_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_line_6"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none"
+          />
+    </RelativeLayout>
+</ScrollView>

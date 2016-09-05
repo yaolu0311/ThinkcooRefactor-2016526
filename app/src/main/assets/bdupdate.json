@@ -1,0 +1,2 @@
+{"tables":[{"tableFields":[{"fieldType":"int","tableField":"dbnewcontent"}],"tableName":"com_thinkcoo_mobile_login_bean_ResponseUserLogin"},
+		  {"tableFields":[{"fieldType":"int","tableField":"dbnewc"}],"tableName":"com_thinkcoo_mobile_qecharts_bean_SystemSetingFlage"}]}

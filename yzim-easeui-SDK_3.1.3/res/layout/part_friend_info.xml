@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/item_profile_signature"/>
+
+    <View
+        android:id="@+id/view01"
+        style="@style/view_line_edge"/>
+
+    <include
+        layout="@layout/item_profile_modify_remark"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_push_msg_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_24"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_44"
+        android:paddingRight="@dimen/px_17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/push_top"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_push_top"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/toggle_push_top"
+                android:layout_width="@dimen/px_185"
+                android:layout_height="@dimen/px_111"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_msg_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_3"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_48"
+        android:paddingRight="@dimen/px_17">
+
+        <TextView
+            android:id="@+id/tv_msg_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerVertical="true"
+            android:text="@string/off_msg_disturb"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_msg_disturb"
+        android:layout_width="@dimen/px_185"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ToggleButton
+            android:id="@+id/toggle_msg_disturb"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="@dimen/px_111"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/item_profile_add_black"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_report_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_3"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_report_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_48"
+            android:text="@string/report_user"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <ImageView
+            style="@style/icon_daYu"/>
+
+    </RelativeLayout>
+
+    <!-- 质疑此人，只在课程圈显示 -->
+    <RelativeLayout
+        android:id="@+id/layout_question_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_3"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_48"
+            android:text="@string/question_user"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_48"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_marginRight="@dimen/px_48"
+            android:background="@drawable/selector_shape_round_blue"
+            android:gravity="center"
+            android:text="@string/send_msg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px_44"/>
+
+        <Button
+            android:id="@+id/btn_delete_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginBottom="@dimen/px_24"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_marginRight="@dimen/px_48"
+            android:layout_marginTop="@dimen/px_24"
+            android:background="@drawable/selector_shape_round_white"
+            android:gravity="center"
+            android:text="@string/delete_user"
+            android:textSize="@dimen/px_44"/>
+    </LinearLayout>
+
+</LinearLayout>

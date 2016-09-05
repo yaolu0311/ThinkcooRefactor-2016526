@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toggle_group_disturb"
+    android:layout_width="@dimen/px_185"
+    android:layout_height="@dimen/px_111"
+    android:background="@android:color/transparent"
+    android:button="@drawable/toggle_button"
+    android:checked="false"
+    android:clickable="false"
+    android:focusable="false"
+    android:text=""
+    android:textOff=""
+    android:textOn="">
+</ToggleButton>

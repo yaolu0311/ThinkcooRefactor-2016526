@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+    <include
+        android:id="@+id/ac_index_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_122"
+        android:layout_below="@id/ac_index_title"
+        android:layout_marginTop="@dimen/px_21"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_location_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_92"
+            android:layout_marginLeft="@dimen/px_43"
+            android:layout_marginRight="@dimen/px_16"
+            android:background="@drawable/tech_bg_edittext"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px_21"
+            android:paddingRight="@dimen/px_21" >
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/locating"
+                android:textColor="@color/color_smoke"
+                android:textSize="@dimen/px_40" />
+
+            <ImageView
+                android:id="@+id/iv_down_arrow"
+                android:layout_width="@dimen/px_27"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_toRightOf="@id/tv_location"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_arrow_down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_109"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1" >
+            <EditText
+                android:id="@+id/et_search_key"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_92"
+                android:background="@drawable/tech_bg_edittext"
+                android:hint="@string/train_content"
+                android:paddingLeft="@dimen/px_92"
+                android:textColor="@color/text_2"
+                android:textColorHint="@color/text_3"
+                android:textSize="@dimen/px_36" />
+
+            <ImageView
+                android:layout_width="@dimen/px_92"
+                android:layout_height="@dimen/px_92"
+                android:padding="@dimen/px_22"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_train_search"
+            android:layout_width="@dimen/px_164"
+            android:layout_height="@dimen/px_92"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/px_22"
+            android:layout_marginRight="@dimen/px_43"
+            android:background="@drawable/ac_shape_but_bule"
+            android:text="@string/search"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/px_36" />
+    </LinearLayout>
+
+</RelativeLayout>

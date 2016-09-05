@@ -1,0 +1,141 @@
+<resources>
+
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <!--  -->
+    <dimen name="view_64">64dp</dimen>
+    <dimen name="title_height">56dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="view_4">4dp</dimen>
+    <dimen name="view_48">48dp</dimen>
+    <dimen name="view_8">8dp</dimen>
+    <dimen name="view_0.5">0.5dp</dimen>
+    <dimen name="view_56">56dp</dimen>
+    <dimen name="view_72">72dp</dimen>
+    <dimen name="view_120">120dp</dimen>
+    <!-- 文字大小 -->
+    <dimen name="title_20sp">20sp</dimen>
+    <dimen name="subhead_16sp">16sp</dimen>
+    <dimen name="body1_14sp">14sp</dimen>
+
+    <!-- 字体尺寸 -->
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_middle_l">20sp</dimen>
+    <dimen name="text_middle_m">18sp</dimen>
+    <dimen name="text_middle">16sp</dimen>
+    <dimen name="text_small_l">14sp</dimen>
+    <dimen name="text_small_ll">15sp</dimen>
+    <dimen name="text_small_m">12sp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="view_0">0dp</dimen>
+
+    <!-- view尺寸 -->
+    <dimen name="view_0.8">0.8dp</dimen>
+    <dimen name="view_80">80dp</dimen>
+    <dimen name="view_200">200dp</dimen>
+    <dimen name="view_250">250dp</dimen>
+    <dimen name="view_18">18dp</dimen>
+    <dimen name="view_40">40dp</dimen>
+    <dimen name="view_38">38dp</dimen>
+    <dimen name="view_164">164dp</dimen>
+    <dimen name="view_45">45dp</dimen>
+    <dimen name="view_50">50dp</dimen>
+    <dimen name="view_35">35dp</dimen>
+    <dimen name="view_30">30dp</dimen>
+    <dimen name="view_10">10dp</dimen>
+    <dimen name="view_13">13dp</dimen>
+    <dimen name="view_28">28dp</dimen>
+    <dimen name="view_5">5dp</dimen>
+    <dimen name="view_27">27dp</dimen>
+    <dimen name="view_16">16dp</dimen>
+    <dimen name="view_17">17dp</dimen>
+    <dimen name="view_60">60dp</dimen>
+    <dimen name="view_65">65dp</dimen>
+    <dimen name="view_58">58dp</dimen>
+    <dimen name="view_25">25dp</dimen>
+    <dimen name="view_32">32dp</dimen>
+    <dimen name="view_34">34dp</dimen>
+    <dimen name="view_70">70dp</dimen>
+    <dimen name="view_15">15dp</dimen>
+    <dimen name="view_20">20dp</dimen>
+    <dimen name="view_110">110dp</dimen>
+    <dimen name="view_112">112dp</dimen>
+    <dimen name="view_2">2dp</dimen>
+    <dimen name="view_3">3dp</dimen>
+    <dimen name="view_150">150dp</dimen>
+    <dimen name="view_190">190dp</dimen>
+    <dimen name="view_1">1dp</dimen>
+    <dimen name="view_6">6dp</dimen>
+    <dimen name="view_11">11dp</dimen>
+    <dimen name="view_116">116dp</dimen>
+    <dimen name="view_12">12dp</dimen>
+    <dimen name="view_14">14dp</dimen>
+    <dimen name="view_90">90dp</dimen>
+    <dimen name="view_100">100dp</dimen>
+    <dimen name="view_180">180dp</dimen>
+    <dimen name="view_220">220dp</dimen>
+    <dimen name="view_24">24dp</dimen>
+    <!-- 图片尺寸 -->
+    <dimen name="image_50">50dp</dimen>
+    <dimen name="image_18">18dp</dimen>
+    <dimen name="image_8">8dp</dimen>
+    <dimen name="image_26">26dp</dimen>
+    <dimen name="image_15">15dp</dimen>
+    <dimen name="image_20">20dp</dimen>
+    <dimen name="image_38">38dp</dimen>
+    <dimen name="image_3">3dp</dimen>
+    <dimen name="image_70">70dp</dimen>
+    <dimen name="image_40">40dp</dimen>
+    <dimen name="image_30">30dp</dimen>
+    <dimen name="image_60">60dp</dimen>
+    <dimen name="image_100">100dp</dimen>
+    <dimen name="image_80">80dp</dimen>
+    <!--求职有关 -->
+    <dimen name="tag_corner_radius">20.0dip</dimen>
+    <dimen name="tag_horizontal_spacing">8.0dip</dimen>
+    <dimen name="tag_vertical_spacing">6.0dip</dimen>
+    <dimen name="common_margin">12.0dip</dimen>
+    <dimen name="common_margin_10">10.0dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="divider_line">0.5dp</dimen>
+
+    <!--MyDayView-->
+    <dimen name="hours_text_size">12sp</dimen>
+    <dimen name="allday_text_size">12sp</dimen>
+    <dimen name="ampm_text_size">10sp</dimen>
+    <dimen name="day_view_event_text_size">12sp</dimen>
+    <dimen name="week_view_event_text_size">12sp</dimen>
+    <dimen name="event_text_vertical_margin">2dp</dimen>
+    <dimen name="event_text_horizontal_margin">4dp</dimen>
+    <dimen name="min_hours_width">24dip</dimen>
+    <!-- margins size of hours column in day/week view -->
+    <dimen name="hours_left_margin">20dip</dimen>
+    <dimen name="hours_right_margin">4dip</dimen>
+    <!-- size of day header in day and week views  -->
+    <dimen name="day_header_height">40dip</dimen>
+    <dimen name="date_header_text_size">20sp</dimen>
+    <dimen name="day_label_text_size">10sp</dimen>
+    <dimen name="all_day_bottom_margin">8dip</dimen>
+    <dimen name="one_day_header_height">0dip</dimen>
+    <dimen name="day_header_bottom_margin">4dip</dimen>
+    <dimen name="new_event_hint_text_size">12sp</dimen>
+    <dimen name="event_min_height">24dip</dimen>
+
+    <dimen name="fab_size_normal">48dp</dimen>
+</resources>

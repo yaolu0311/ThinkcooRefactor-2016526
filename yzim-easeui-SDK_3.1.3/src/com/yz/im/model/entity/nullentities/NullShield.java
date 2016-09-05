@@ -1,0 +1,14 @@
+package com.yz.im.model.entity.nullentities;
+
+import com.yz.im.model.db.entity.Shield;
+
+/**
+ * Created by cys on 2016/7/19
+ */
+public class NullShield extends Shield {
+
+    @Override
+    public boolean isEmpty() {
+        return true;
+    }
+}

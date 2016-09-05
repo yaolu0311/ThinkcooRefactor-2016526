@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_120"
+    android:background="@drawable/edittext_bg">
+
+    <ImageView
+        android:id="@+id/icon_search"
+        android:layout_width="@dimen/px_92"
+        android:layout_height="@dimen/px_120"
+        android:src="@mipmap/ic_search"
+        android:padding="@dimen/px_22"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120"
+        android:textColor="@color/color_smoke"
+        android:textColorHint="@color/font6"
+        android:textSize="@dimen/px_36"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingLeft="@dimen/px_15"
+        android:paddingRight="@dimen/px_15"
+        android:layout_toRightOf="@+id/icon_search"
+        android:layout_toLeftOf="@+id/icon_clear"/>
+
+    <ImageView
+        android:id="@+id/icon_clear"
+        android:layout_width="@dimen/px_92"
+        android:layout_height="@dimen/px_120"
+        android:src="@mipmap/ic_clear"
+        android:padding="@dimen/px_22"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

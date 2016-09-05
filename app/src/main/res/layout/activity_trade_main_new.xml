@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ac_title_trade" />
+
+    <RelativeLayout
+        android:id="@+id/ac_layout_trade_location"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_92"
+        android:layout_below="@id/include"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/tech_bg_edittext" >
+
+        <TextView
+            android:id="@+id/ac_trade_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_22"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/locating"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/px_44" />
+
+        <ImageView
+            android:id="@+id/ac_image_trade_location"
+            android:layout_width="@dimen/px_55"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ac_trade_location"
+            android:scaleType="centerInside"
+            android:src="@mipmap/iconfont_trade_index_down" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac_Textview_trade_index_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_92"
+        android:layout_below="@id/include"
+        android:layout_marginRight="@dimen/px_44"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_toRightOf="@id/ac_layout_trade_location"
+        android:background="@drawable/tech_bg_edittext" >
+
+        <ImageView
+            android:layout_width="@dimen/px_92"
+            android:layout_height="@dimen/px_92"
+            android:src="@mipmap/getjob_sou"
+            android:padding="@dimen/px_22"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac_layout_trade_location"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_category"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_30"
+            android:background="@color/background" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ac_trade_index_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rl_category"
+        android:layout_marginTop="@dimen/px_20" >
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ac_title_skill_hobby" />
+
+    <ImageView
+        android:id="@+id/shakeBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/shakebackgroud_log" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_uplogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/shake_logo_up" />
+
+        <ImageView
+            android:id="@+id/iv_downlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/shake_logo_down" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rollcallactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="XXX活动详情"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_curtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:singleLine="true"
+        android:text="当前时间：2016年-06-18 10:00 AM"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_yaoyiyao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_curtime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="摇一摇开始点名"
+        android:textSize="23sp" />
+
+</RelativeLayout>

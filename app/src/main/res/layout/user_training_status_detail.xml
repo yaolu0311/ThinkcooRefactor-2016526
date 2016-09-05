@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/train_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/train_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/train_time_name"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="时间"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <TextView
+                android:id="@+id/train_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_73"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+
+            <ImageView
+                android:id="@+id/train_time_flag"
+                style="@style/dayu_icon"
+                android:layout_marginRight="0dp"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_four"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/train_time"/>
+        <!-- 班级名称 -->
+
+        <RelativeLayout
+            android:id="@+id/train_organization"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_four"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/train_organization_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/personal_trainstudies_zw"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/train_organization_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_13"
+                android:layout_toRightOf="@+id/train_organization_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:paddingRight="@dimen/px_51"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_fourr"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/train_organization"/>
+        <!-- 学号名称 -->
+
+        <RelativeLayout
+            android:id="@+id/train_organization_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_fourr"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/train_organization_id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/xuehao"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/train_organization_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_13"
+                android:layout_toRightOf="@+id/train_organization_id_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:paddingRight="@dimen/px_51"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_foorr"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/train_organization_id"/>
+        <!-- 学号名称 -->
+
+        <RelativeLayout
+            android:id="@+id/train_class"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_foorr"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/train_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/classname"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <EditText
+                android:id="@+id/train_class_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_13"
+                android:layout_toRightOf="@+id/train_class_name"
+                android:background="@null"
+                android:gravity="top|right"
+                android:paddingRight="@dimen/px_51"
+                android:textColor="@color/text_2"
+                android:textSize="@dimen/px_36"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_five"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/train_class"/>
+
+        <RelativeLayout
+            android:id="@+id/train_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_134"
+            android:layout_below="@+id/ac_line_five"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_43"
+                android:text="@string/personal_trainstudies_nrl"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ac_line_fixv"
+            style="@style/view_line_edge"
+            android:layout_below="@+id/train_content"/>
+
+        <RelativeLayout
+            android:id="@+id/train_content_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ac_line_fixv"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/ev_train_content_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:minHeight="150dp"
+                android:gravity="top|left"
+                android:hint="@string/personal_trainstudies_nrms"
+                android:maxLength="200"
+                android:paddingLeft="@dimen/px_43"
+                android:paddingRight="@dimen/px_43"
+                android:paddingTop="@dimen/px_15"
+                android:textColor="@color/text_2"
+                android:textColorHint="@color/text_3"
+                android:textSize="@dimen/px_36"/>
+
+            <TextView
+                android:id="@+id/ac_text_update_signature_wordcounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ev_train_content_detail"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/px_21"
+                android:layout_marginRight="@dimen/px_40"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

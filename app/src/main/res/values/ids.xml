@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="image_view_tag_key" type="id">123456</item>
+    <!-- 二维码消息分发 -->
+    <item name="scanner_decode_succeeded" type="id"/>
+    <item name="scanner_return_scan_result" type="id"/>
+    <item name="scanner_launch_product_query" type="id"/>
+    <item name="scanner_decode" type="id"/>
+    <item name="scanner_search_book_contents_failed" type="id"/>
+    <item name="scanner_quit" type="id"/>
+    <item name="scanner_restart_preview" type="id"/>
+    <item name="scanner_decode_failed" type="id"/>
+    <item name="scanner_auto_focus" type="id"/>
+
+</resources>

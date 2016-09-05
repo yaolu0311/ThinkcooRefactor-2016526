@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/add_shield_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加屏蔽公司"
+            android:drawablePadding="@dimen/px_20"
+            android:drawableLeft="@mipmap/add_group"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        />
+
+</LinearLayout>

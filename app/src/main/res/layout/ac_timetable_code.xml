@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_title" >
+
+    <include
+        android:id="@+id/includde"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/includde"
+        android:layout_marginTop="@dimen/px_82"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ac_schedule_promptone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="扫描以下二维码"
+            android:textColor="@color/color_smoke"
+            android:textSize="@dimen/text_small_l" />
+
+        <TextView
+            android:id="@+id/ac_schedule_prompttwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_12"
+            android:gravity="center_horizontal"
+            android:text="即可复制你的课表"
+            android:textColor="@color/color_smoke"
+            android:textSize="@dimen/text_small_l" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_82"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/image_zx_creat_code"
+            android:layout_width="@dimen/px_680"
+            android:layout_height="@dimen/px_680"
+            android:padding="@dimen/px_44" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_153"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" 
+        >
+        
+        <RelativeLayout
+            android:id="@+id/ac_time_code_save"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_153"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <ImageView
+            android:id="@+id/image_zx_save"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/baocun_btn" />
+            <TextView
+                android:layout_below="@+id/image_zx_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/draw_but"
+                android:text="保存到手机"
+                />
+        </RelativeLayout>
+        
+         <RelativeLayout
+             android:id="@+id/ac_time_code_send"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_153"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="1dp"
+            >
+           <ImageView
+            android:id="@+id/image_zx_send"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/fasong_btn" />
+               <TextView
+                android:layout_below="@+id/image_zx_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/draw_but"
+                android:text="发送给好友"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

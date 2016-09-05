@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_msg_shield"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_3"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_48"
+        android:paddingRight="@dimen/px_17">
+
+        <TextView
+            android:id="@+id/tv_msg_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerVertical="true"
+            android:text="@string/msg_shield"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_44"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_msg_shield"
+            android:layout_width="@dimen/px_185"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ToggleButton
+                android:id="@+id/toggle_msg_shield"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_111"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_button"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_48"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_marginRight="@dimen/px_48"
+            android:background="@drawable/selector_shape_round_blue"
+            android:gravity="center"
+            android:text="@string/send_msg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/px_44"/>
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_120"
+            android:layout_marginBottom="@dimen/px_24"
+            android:layout_marginLeft="@dimen/px_48"
+            android:layout_marginRight="@dimen/px_48"
+            android:layout_marginTop="@dimen/px_24"
+            android:background="@drawable/selector_shape_round_white"
+            android:gravity="center"
+            android:text="@string/add_to_friend"
+            android:textSize="@dimen/px_44"/>
+    </LinearLayout>
+
+
+</LinearLayout>

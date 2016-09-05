@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tag="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ac_title_search" />
+
+    <RelativeLayout
+        android:id="@+id/ac_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/px_44" >
+
+        <TextView
+            android:id="@+id/ac_history_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_44"
+            android:layout_marginTop="@dimen/px_22"
+            android:text="@string/search_history"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:id="@+id/ac_clear_history_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_44"
+            android:layout_marginTop="@dimen/px_22"
+            android:text="@string/clear_search_history"
+            android:textColor="@color/text_1"
+            android:textSize="@dimen/px_40" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ac_add_labellay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ac_layout"
+        android:layout_margin="16dp"
+        />
+
+</RelativeLayout>

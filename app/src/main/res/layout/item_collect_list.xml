@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <!--技术合作收藏的adapter-->
+
+    <TextView
+        android:id="@+id/tv__coll_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_44"
+        android:layout_marginTop="@dimen/px_22"
+        android:textColor="@color/font5"
+        android:textSize="@dimen/px_44" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv__coll_name"
+        android:layout_below="@+id/tv__coll_name"
+        android:layout_marginTop="@dimen/px_22"
+         android:ellipsize="end"
+        android:maxEms="25"
+        android:singleLine="true"
+        android:textColor="@color/font3"
+        android:layout_marginRight="@dimen/px_44"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/tv_collect_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_company_name"
+        android:layout_below="@+id/tv_company_name"
+        android:layout_marginTop="@dimen/view_2"
+        android:ellipsize="end"
+        android:maxEms="14"
+        android:singleLine="true"
+        android:textColor="@color/font3"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/tv_collect_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_collect_pay"
+        android:layout_marginBottom="@dimen/px_22"
+        android:layout_marginRight="@dimen/px_44"
+        android:textColor="@color/font3"
+        android:textSize="@dimen/px_32" />
+
+</RelativeLayout>

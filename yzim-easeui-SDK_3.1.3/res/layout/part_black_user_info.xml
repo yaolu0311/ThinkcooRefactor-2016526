@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/item_profile_signature"/>
+
+    <View
+        android:id="@+id/view01"
+        style="@style/view_line_edge"/>
+
+    <include
+        layout="@layout/item_profile_modify_remark"/>
+
+    <include
+        layout="@layout/item_profile_add_black"/>
+
+    <Button
+        android:id="@+id/btn_delete_friend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120"
+        android:layout_marginLeft="@dimen/px_48"
+        android:layout_marginRight="@dimen/px_48"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/selector_shape_round_blue"
+        android:gravity="center"
+        android:text="@string/delete_user"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/px_44"/>
+
+</LinearLayout>

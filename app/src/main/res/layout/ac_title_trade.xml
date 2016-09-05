@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_154"
+                android:background="@color/blue_title"
+                android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_back_trade"
+        android:layout_width="@dimen/px_137"
+        android:layout_height="@dimen/px_137"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_16"
+        android:padding="@dimen/px_33"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/tittle_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_edittext_normal" >
+
+        <TextView
+            android:id="@+id/ac_textview_sell"
+            style="@style/alternative_title_text"
+            android:background="@drawable/textviewborder_white"
+            android:text="@string/trade_sell"
+            android:textColor="@color/blue_title" />
+
+        <TextView
+            android:id="@+id/ac_textview_buy"
+            style="@style/alternative_title_text"
+            android:layout_toRightOf="@id/ac_textview_sell"
+            android:background="@drawable/textviewborder_blue"
+            android:text="@string/trade_buy"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_titleComplete_trade"
+        android:layout_width="@dimen/px_70"
+        android:layout_height="@dimen/px_70"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_44"
+        android:scaleType="centerInside"
+        android:src="@mipmap/iconfont_trade_center" />
+
+</RelativeLayout>

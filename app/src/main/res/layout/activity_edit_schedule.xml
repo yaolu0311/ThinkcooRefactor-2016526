@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.views.activitys.AddEditScheduleActivity">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+        <!--事件名称 -->
+        <LinearLayout
+            android:id="@+id/more_options_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@color/background_color"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/tv_schedule_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:gravity="center|left"
+                android:hint="@string/add_schedule_name"
+                android:padding="@dimen/px_44"
+                android:textColorHint="@color/text_3"
+                android:textSize="@dimen/text_middle"/>
+
+            <!--事件类型 -->
+            <LinearLayout
+                android:id="@+id/ll_schedule_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_schedule_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/text_3"
+                    android:gravity="center|left"
+                    android:hint="@string/add_schedule_type"
+                    android:padding="@dimen/px_44"
+                    android:textSize="@dimen/text_middle"/>
+
+                <ImageView
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/em_right_arrow_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!--选择时间与地点-->
+            <include
+                layout="@layout/item_schedule"/>
+
+            <TextView
+                android:id="@+id/tv_more_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/px_44"
+                android:text="@string/more_options"
+                android:textColor="@color/text_1"
+                android:textSize="@dimen/px_44"/>
+
+            <View
+                android:background="@color/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

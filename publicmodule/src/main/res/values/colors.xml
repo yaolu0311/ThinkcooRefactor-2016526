@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_title">#338dff</color>
+    <color name="text_1">#333333</color>
+    <color name="text_2">#666666</color>
+    <color name="text_3">#999999</color>
+    <color name="line">#cccccc</color>
+    <color name="line_1">#d7d7d7</color>
+    <color name="background">#f1f1f1</color>
+    <color name="white">#ffffff</color>
+
+    <color name="action_sheet_gray">#8F8F8F</color>
+</resources>

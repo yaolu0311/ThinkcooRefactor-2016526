@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_122"
+        android:layout_below="@id/title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="@dimen/px_21"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_109"
+            android:layout_weight="0.89">
+
+            <EditText
+                android:id="@+id/et_search_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_92"
+                android:layout_alignLeft="@+id/iv_serachicon"
+                android:layout_alignStart="@+id/iv_serachicon"
+                android:background="@drawable/bg_edittext_train"
+                android:hint="@string/train_hint_word"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/px_100"
+                android:paddingRight="@dimen/px_28"
+                android:singleLine="true"
+                android:textColor="@color/text_2"
+                android:textColorHint="@color/text_3"
+                android:textSize="@dimen/px_36" />
+
+            <ImageView
+                android:id="@+id/iv_serachicon"
+                android:layout_width="@dimen/px_92"
+                android:layout_height="@dimen/px_92"
+                android:layout_marginLeft="@dimen/px_22"
+                android:padding="@dimen/px_22"
+                android:src="@mipmap/search_icon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_train_search"
+            android:layout_width="@dimen/px_164"
+            android:layout_height="@dimen/px_92"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/px_22"
+            android:layout_marginRight="@dimen/px_43"
+            android:background="@drawable/ac_shape_but_bule"
+            android:text="@string/sousuo"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/px_36" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/item_train_search"
+        layout="@layout/item_train_search_title" />
+
+    <FrameLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+</RelativeLayout>
